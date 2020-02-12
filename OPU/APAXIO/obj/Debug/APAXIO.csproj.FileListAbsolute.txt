@@ -1,0 +1,12 @@
+C:\D\MD\C#\ApaxLib\APAXIO\bin\Debug\APAXIO.exe.config
+C:\D\MD\C#\ApaxLib\APAXIO\bin\Debug\APAXIO.exe
+C:\D\MD\C#\ApaxLib\APAXIO\bin\Debug\APAXIO.pdb
+C:\D\MD\C#\ApaxLib\APAXIO\bin\Debug\Advantech.Adam.DLL
+C:\D\MD\C#\ApaxLib\APAXIO\bin\Debug\Advantech.Common.dll
+C:\D\MD\C#\ApaxLib\APAXIO\bin\Debug\Advantech.Protocol.dll
+C:\D\MD\C#\ApaxLib\APAXIO\bin\Debug\Advantech.Adam.xml
+C:\D\MD\C#\ApaxLib\APAXIO\bin\Debug\Advantech.Common.xml
+C:\D\MD\C#\ApaxLib\APAXIO\bin\Debug\Advantech.Protocol.xml
+C:\D\MD\C#\ApaxLib\APAXIO\obj\Debug\APAXIO.csprojResolveAssemblyReference.cache
+C:\D\MD\C#\ApaxLib\APAXIO\obj\Debug\APAXIO.exe
+C:\D\MD\C#\ApaxLib\APAXIO\obj\Debug\APAXIO.pdb

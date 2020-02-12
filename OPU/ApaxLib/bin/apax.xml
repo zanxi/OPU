@@ -1,0 +1,28 @@
+<Apax>
+	<Server>
+		<name>Number1</name>
+		<description>Первая половина пульта</description>
+	</Server>
+	<Devices>
+		<device>
+			<name></name>
+			<description></description>
+			<driver>
+			</driver>
+			<registers>
+			/*
+				Либо конструкция с загрузкой файла <load>имя файла xml</load>
+				либо описание регистров в формате как для aggregate
+			*/
+			</registers>
+			
+		</device>
+	</Devices>
+	<Variables>
+	
+	</Variables>
+	<Function>
+	</Function>
+	<Blinds>
+	</Blinds>
+</Apax>

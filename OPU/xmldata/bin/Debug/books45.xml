@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Apax>
+	<Server name="Apax5580/R" description="OPU2 сервер щита БАРС" 
+	step="100" reconect="60000">
+	</Server>
+	<Devices>
+		<device name="CTRL" description="Контроль Серверов" step="500"
+				type="RezCanal"
+				ip="192.168.1.173" port="502" 
+				ipdub="192.168.1.174" portdub="502"
+				timeout="300"
+				load="c:/OPU/ctrl.xml"> 
+		</device>
+		<device name="Fout" description="ЦИФРОВЫЕ ИНДИКАТОРЫ" step="500"
+				type="ModBusSerialMaster"
+				portname="COM1" encoding="RTU" baudRate="19200" databits="8" stopbits="1" parity="None"
+				timeout="200" 
+				load="c:/OPU/FoutR.xml"> 
+		</device>
+
+		<device name="DO5046" description="APAX 5046 вывод на лампочки " step="200"
+				type="ApaxOutput"
+				timeout="200"
+				load="c:/OPU/LampR.xml"> 
+		</device>
+
+	</Devices>
+  </Apax>

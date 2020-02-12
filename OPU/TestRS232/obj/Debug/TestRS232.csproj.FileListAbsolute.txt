@@ -1,0 +1,3 @@
+C:\Users\Юрий\OneDrive\ApaxLib\TestRS232\bin\Debug\TestRS232.exe.config
+C:\Users\Юрий\OneDrive\ApaxLib\TestRS232\obj\Debug\TestRS232.exe
+C:\Users\Юрий\OneDrive\ApaxLib\TestRS232\obj\Debug\TestRS232.pdb

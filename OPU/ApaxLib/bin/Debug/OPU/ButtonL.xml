@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+    <format maxRecords="2147483647">
+        <fields>
+            <field description="Имя" name="name" type="S">
+              <validators>&lt;L=1 50&gt;&lt;R=\w+^^Имя может содержать только буквы, цифры и символы подчеркивания&gt;</validators>
+                <defaultValue/>
+            </field>
+            <field description="Описание" name="description" type="S">
+              <validators>&lt;L=1 200&gt;&lt;R=[^\p{Cntrl}]*^^Описание может содержать только печатные символы&gt;</validators>
+                <defaultValue/>
+            </field>
+            <field description="Тип" name="type" type="I">
+              <selectionValues>
+                <option description="Дискретный выход (Coil)">0</option>
+                <option description="Дискретный вход (Discrete Input)">1</option>
+                <option description="Входной регистр (Input Register)">2</option>
+                <option description="Выходной регистр (Holding Register)">3</option>
+                        </selectionValues>
+                <defaultValue>0</defaultValue>
+            </field>
+            <field description="Формат" name="format" type="I">
+              <selectionValues>
+                <option description="2-байтный Int Unsigned">2</option>
+                <option description="2-байтный Int Signed">3</option>
+                <option description="4-байтный Int Unsigned">4</option>
+                <option description="4-байтный Int Signed">5</option>
+                <option description="4-байтный Int Unsigned Swapped">6</option>
+                <option description="4-байтный Int Signed Swapped">7</option>
+                <option description="4-байтный Float">8</option>
+                <option description="4-байтный Float Swapped">9</option>
+                <option description="8-байтный Int Signed">11</option>
+                <option description="8-байтный Int Signed Swapped">13</option>
+                <option description="8-байтный Float">14</option>
+                <option description="8-байтный Float Swapped">15</option>
+                <option description="2-байтный BCD">16</option>
+                <option description="4-байтный BCD">17</option>
+                <option description="Символьный">18</option>
+                <option description="Строковый">19</option>
+                </selectionValues>
+                <defaultValue>2</defaultValue>
+            </field>
+            <field description="Десятичный адрес (смещение) регистра"
+                name="address" type="I">
+                <defaultValue>0</defaultValue>
+            </field>
+            <field description="Размер" name="size" type="I">
+                <validators>&lt;L=1 255&gt;</validators>
+                <defaultValue>1</defaultValue>
+            </field>
+            <field description="Идентификатор устройства (Unit ID)"
+                name="unitId" type="I">
+                <defaultValue>1</defaultValue>
+            </field>
+        </fields>
+    </format>
+    <records>
+
+<record>
+	<value name="name">F3_2_1L</value>
+	<value name="description">"F3_2_1L ОПУ 1.2 ИС1 1x100"</value>
+	<value name="slot">2</value>
+	<value name="address">0</value>
+	<value name="size">1</value>
+</record>
+<record>
+	<value name="name">F3_2_2L</value>
+	<value name="description">"F3_2_2L ОПУ 1.2 ИС1 1x10"</value>
+	<value name="slot">2</value>
+	<value name="address">1</value>
+	<value name="size">9</value>
+</record>
+<record>
+	<value name="name">F3_2_3L</value>
+	<value name="description">"F3_2_3L ОПУ 1.2 ИС1 1x1"</value>
+	<value name="slot">2</value>
+	<value name="address">10</value>
+	<value name="size">9</value>
+</record>
+<record>
+	<value name="name">F3_2_4L</value>
+	<value name="description">"F3_2_4L ОПУ 1.2 ИС1 1x0,1"</value>
+	<value name="slot">2</value>
+	<value name="address">19</value>
+	<value name="size">9</value>
+</record>
+<record>
+	<value name="name">F3_2_5L</value>
+	<value name="description">"F3_2_5L ОПУ 1.2 ИС1 1x0,01"</value>
+	<value name="slot">3</value>
+	<value name="address">4</value>
+	<value name="size">9</value>
+</record>
+<record>
+	<value name="name">F6_5_1L</value>
+	<value name="description">"F6_5_1L ОПУ 1.2 ББ1 1x10"</value>
+	<value name="slot">3</value>
+	<value name="address">13</value>
+	<value name="size">9</value>
+</record>
+<record>
+	<value name="name">F6_5_2L</value>
+	<value name="description">"F6_5_2L ОПУ 1.2 ББ1 1x1"</value>
+	<value name="slot">3</value>
+	<value name="address">22</value>
+	<value name="size">9</value>
+</record>
+<record>
+	<value name="name">F6_5_3L</value>
+	<value name="description">"F6_5_3L ОПУ 1.2 ББ1 1x0,1"</value>
+	<value name="slot">4</value>
+	<value name="address">7</value>
+	<value name="size">9</value>
+</record>
+<record>
+	<value name="name">F6_5_4L</value>
+	<value name="description">"F6_5_4L ОПУ 1.2 ББ1 1x0,01"</value>
+	<value name="slot">4</value>
+	<value name="address">16</value>
+	<value name="size">9</value>
+</record>
+<record>
+	<value name="name">F38_5_1L</value>
+	<value name="description">"F38_5_1L ОПУ 1.2 ББ2 1x10"</value>
+	<value name="slot">6</value>
+	<value name="address">14</value>
+	<value name="size">9</value>
+</record>
+<record>
+	<value name="name">F38_5_2L</value>
+	<value name="description">"F38_5_2L ОПУ 1.2 ББ2 1x1"</value>
+	<value name="slot">6</value>
+	<value name="address">23</value>
+	<value name="size">9</value>
+</record>
+<record>
+	<value name="name">F38_5_3L</value>
+	<value name="description">"F38_5_3L ОПУ 1.2 ББ2 1x0,1"</value>
+	<value name="slot">7</value>
+	<value name="address">8</value>
+	<value name="size">9</value>
+</record>
+<record>
+	<value name="name">F38_5_4L</value>
+	<value name="description">"F38_5_4L ОПУ 1.2 ББ2 1x0,01"</value>
+	<value name="slot">7</value>
+	<value name="address">17</value>
+	<value name="size">9</value>
+</record>
+<record>
+	<value name="name">F33_3_1L</value>
+	<value name="description">"F33_3_1L ОПУ 1.2 ИС2 1x100"</value>
+	<value name="slot">5</value>
+	<value name="address">1</value>
+	<value name="size">1</value>
+</record>
+<record>
+	<value name="name">F33_3_2L</value>
+	<value name="description">"F33_3_2L ОПУ 1.2 ИС2 1x10"</value>
+	<value name="slot">5</value>
+	<value name="address">2</value>
+	<value name="size">9</value>
+</record>
+<record>
+	<value name="name">F33_3_3L</value>
+	<value name="description">"F33_3_3L ОПУ 1.2 ИС2 1x1"</value>
+	<value name="slot">5</value>
+	<value name="address">11</value>
+	<value name="size">9</value>
+</record>
+<record>
+	<value name="name">F33_3_4L</value>
+	<value name="description">"F33_3_4L ОПУ 1.2 ИС2 1x0,1"</value>
+	<value name="slot">5</value>
+	<value name="address">20</value>
+	<value name="size">9</value>
+</record>
+<record>
+	<value name="name">F33_3_5L</value>
+	<value name="description">"F33_3_5L ОПУ 1.2 ИС2 1x0,01"</value>
+	<value name="slot">6</value>
+	<value name="address">5</value>
+	<value name="size">9</value>
+</record>
+<record>
+	<value name="name">B18_5L</value>
+	<value name="description">"B18_5L ОПУ 1.2 Пуск"</value>
+	<value name="slot">8</value>
+	<value name="address">2</value>
+</record>
+<record>
+	<value name="name">B20_5L</value>
+	<value name="description">"B20_5L ОПУ 1.2 СТОП"</value>
+	<value name="slot">8</value>
+	<value name="address">3</value>
+</record>
+<record>
+	<value name="name">B22_5L</value>
+	<value name="description">"B22_5L ОПУ 1.2 СПУСК"</value>
+	<value name="slot">8</value>
+	<value name="address">4</value>
+</record>
+<record>
+	<value name="name">B25_5L</value>
+	<value name="description">"B25_5L ОПУ 1.2 СБРОС РБ"</value>
+	<value name="slot">8</value>
+	<value name="address">5</value>
+</record>
+<record>
+	<value name="name">B27_5L</value>
+	<value name="description">"B27_5L ОПУ 1.2 СБРОС ББ "</value>
+	<value name="slot">8</value>
+	<value name="address">6</value>
+</record>
+
+<record>
+	<value name="name">S2_8L</value>
+	<value name="description">"S2_8L ОПУ 1.3 РАЗРЕШЕНИЕ ПЕРЕМЕЩЕНИЕ РБ1"</value>
+	<value name="slot">1</value>
+	<value name="address">5</value>
+</record>
+<record>
+	<value name="name">B2_11L</value>
+	<value name="description">"B2_11L ОПУ 1.3 ПЕРЕМЕЩЕНИЕ РБ1"</value>
+	<value name="slot">1</value>
+	<value name="address">6</value>
+</record>
+<record>
+	<value name="name">S4_8L</value>
+	<value name="description">"S4_8L ОПУ 1.3 РАЗРЕШЕНИЕ ПЕРЕМЕЩЕНИЕ ИС1"</value>
+	<value name="slot">1</value>
+	<value name="address">7</value>
+</record>
+<record>
+	<value name="name">B6_11L</value>
+	<value name="description">"B6_11L ОПУ 1.3 ПЕРЕМЕЩЕНИЕ ББ1"</value>
+	<value name="slot">1</value>
+	<value name="address">10</value>
+</record>
+<record>
+	<value name="name">S6_8L</value>
+	<value name="description">"S6_8L ОПУ 1.3 РАЗРЕШЕНИЕ ПЕРЕМЕЩЕНИЕ ББ1"</value>
+	<value name="slot">1</value>
+	<value name="address">9</value>
+</record>
+<record>
+	<value name="name">B8_11L</value>
+	<value name="description">"B8_11L ОПУ 1.3 ПЕРЕМЕЩЕНИЕ РБ2"</value>
+	<value name="slot">1</value>
+	<value name="address">12</value>
+</record>
+<record>
+	<value name="name">S8_8L</value>
+	<value name="description">"S8_8L ОПУ 1.3 РАЗРЕШЕНИЕ ПЕРЕМЕЩЕНИЕ РБ2"</value>
+	<value name="slot">1</value>
+	<value name="address">11</value>
+</record>
+<record>
+	<value name="name">B10_11L</value>
+	<value name="description">"B10_11L ОПУ 1.3 ПЕРЕМЕЩЕНИЕ ИС2"</value>
+	<value name="slot">1</value>
+	<value name="address">14</value>
+</record>
+<record>
+	<value name="name">S10_8L</value>
+	<value name="description">"S10_8L ОПУ 1.3 РАЗРЕШЕНИЕ ПЕРЕМЕЩЕНИЕ ИС2"</value>
+	<value name="slot">1</value>
+	<value name="address">13</value>
+</record>
+<record>
+	<value name="name">B12_11L</value>
+	<value name="description">"B12_11L ОПУ 1.3 ПЕРЕМЕЩЕНИЕ ББ2"</value>
+	<value name="slot">1</value>
+	<value name="address">16</value>
+</record>
+<record>
+	<value name="name">S12_8L</value>
+	<value name="description">"S12_8L ОПУ 1.3 РАЗРЕШЕНИЕ ПЕРЕМЕЩЕНИЕ ББ2"</value>
+	<value name="slot">1</value>
+	<value name="address">15</value>
+</record>
+<record>
+	<value name="name">B4_11L</value>
+	<value name="description">"B4_11L ОПУ 1.3 ПЕРЕМЕЩЕНИЕ ИС1"</value>
+	<value name="slot">1</value>
+	<value name="address">8</value>
+</record>
+
+<record>
+	<value name="name">B2_6L</value>
+	<value name="description">"B2_6L ОПУ 1.3 РЕЖИМ Р/А"</value>
+	<value name="slot">0</value>
+	<value name="address">17</value>
+</record>
+<record>
+	<value name="name">S7_5L</value>
+	<value name="description">"S7_5L ОПУ 1.3 РАЗРЕШЕНИЕ МД3 "</value>
+	<value name="slot">0</value>
+	<value name="address">18</value>
+</record>
+<record>
+	<value name="name">F3_2L</value>
+	<value name="description">"F3_2L ОПУ 1.3 РЕЖИМ РАБОТЫ"</value>
+	<value name="slot">0</value>
+	<value name="address">0</value>
+	<value name="size">4</value>
+</record>
+<record>
+	<value name="name">F7_2L</value>
+	<value name="description">"F7_2L ОПУ 1.3 ВЫБОР ЗОН"</value>
+	<value name="slot">0</value>
+	<value name="address">4</value>
+	<value name="size">3</value>
+</record>
+<record>
+	<value name="name">F11_2L</value>
+	<value name="description">"F11_2L ОПУ 1.3 ПРОГРАММЫ"</value>
+	<value name="slot">0</value>
+	<value name="address">7</value>
+	<value name="size">3</value>
+</record>
+<record>
+	<value name="name">F4_5L</value>
+	<value name="description">"F4_5L ОПУ 1.3 ВЫБОР МОЩНОСТИ"</value>
+	<value name="slot">0</value>
+	<value name="address">10</value>
+	<value name="size">7</value>
+</record>
+<record>
+	<value name="name">F11_5L</value>
+	<value name="description">"F11_5L ОПУ 1.3 ПРОВЕРКА"</value>
+	<value name="slot">0</value>
+	<value name="address">19</value>
+	<value name="size">10</value>
+</record>
+<record>
+	<value name="name">F30_5L</value>
+	<value name="description">"F30_5L ОПУ 1.2 ВЫСТРЕЛ"</value>
+	<value name="slot">8</value>
+	<value name="address">7</value>
+	<value name="size">2</value>
+</record>
+
+
+</records>
+</table>

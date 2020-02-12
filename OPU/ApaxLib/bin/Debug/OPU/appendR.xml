@@ -1,0 +1,128 @@
+<Blinds>
+<blind name="SET" start="true" time="0">
+	<param name="CTRL:OPURCON" type="out"> </param>
+	<param name="TRUE" type="up"> </param>
+</blind>
+<blind name="LIVE" start="true" time="0">
+	<param name="CTRL:OPURLIVE" type="out"> </param>
+</blind>
+<blind name="STATUS" start="true" time="0">
+	<param name="CTRL:OPURERROR" type="out"> </param>
+</blind>
+<blind name="OR" start="true" time="0">
+	<param name="Baz1:R0VZ05UZ1" type="up"> </param>
+	<param name="Baz2:R0VZ05UZ2" type="up"> </param>
+	<param name="AZCODE" type="out"> </param>
+</blind>
+<blind name="AND" start="true" time="0">
+	<param name="L43_23R" type="out"> </param>
+	<param name="AZCODE" type="up"> </param>
+	<param name="Con8" type="up"> </param>
+</blind>
+<blind name="AND" start="true" time="0">
+	<param name="L43_28R" type="out"> </param>
+	<param name="AZCODE" type="up"> </param>
+	<param name="Con1024" type="up"> </param>
+</blind>
+<blind name="AND" start="true" time="0">
+	<param name="L43_29R" type="out"> </param>
+	<param name="AZCODE" type="up"> </param>
+	<param name="Con16" type="up"> </param>
+</blind>
+<blind name="AND" start="true" time="0">
+	<param name="L43_30R" type="out"> </param>
+	<param name="AZCODE" type="up"> </param>
+	<param name="Con32768" type="up"> </param>
+</blind>
+<blind name="AND" start="true" time="0">
+	<param name="L43_31R" type="out"> </param>
+	<param name="AZCODE" type="up"> </param>
+	<param name="Con16384" type="up"> </param>
+</blind>
+<blind name="AND" start="true" time="0">
+	<param name="L43_44R" type="out"> </param>
+	<param name="AZCODE" type="up"> </param>
+	<param name="Con32" type="up"> </param>
+</blind>
+<blind name="AND" start="true" time="0">
+	<param name="L43_45R" type="out"> </param>
+	<param name="AZCODE" type="up"> </param>
+	<param name="Con65536" type="up"> </param>
+</blind>
+<blind name="AND" start="true" time="0">
+	<param name="L43_32R" type="out"> </param>
+	<param name="AZCODE" type="up"> </param>
+	<param name="Con2048" type="up"> </param>
+</blind>
+<blind name="AND" start="true" time="0">
+	<param name="L43_46R" type="out"> </param>
+	<param name="AZCODE" type="up"> </param>
+	<param name="Con4096" type="up"> </param>
+</blind>
+<blind name="AND" start="true" time="0">
+	<param name="L38_26R" type="out"> </param>
+	<param name="AZCODE" type="up"> </param>
+	<param name="Con258" type="up"> </param>
+</blind>
+<blind name="AND" start="true" time="0">
+	<param name="L38_27R" type="out"> </param>
+	<param name="AZCODE" type="up"> </param>
+	<param name="Con516" type="up"> </param>
+</blind>
+<blind name="AND" start="true" time="0">
+	<param name="L43_21R" type="out"> </param>
+	<param name="AZCODE" type="up"> </param>
+	<param name="Con64" type="up"> </param>
+</blind>
+<blind name="AND" start="true" time="0">
+	<param name="L43_22R" type="out"> </param>
+	<param name="AZCODE" type="up"> </param>
+	<param name="Con8192" type="up"> </param>
+</blind>
+
+<blind name="SET" start="true" time="0">
+	<param name="BarsDU:C1MD31LP2" type="out"> </param>
+	<param name="B6_11R" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+	<param name="BarsDU:R4MD11LP2" type="out"> </param>
+	<param name="B8_11R" type="up"> </param>
+</blind>
+<blind name="NOT" start="true" time="0">
+	<param name="BarsDU:R4MD31LP2" type="out"> </param>
+	<param name="B10_11R" type="up"> </param>
+</blind>
+<blind name="NOT" start="true" time="0">
+	<param name="BarsDU:R0MD11LP2" type="out"> </param>
+	<param name="B2_11R" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+	<param name="BarsDU:R4MD21LP2" type="out"> </param>
+	<param name="B12_11R" type="up"> </param>
+</blind>
+<blind name="SWITCH" start="true" time="0">
+	<param name="F3_2_4R" type="up"> </param>
+	<param name="F3_2_3R" type="up"> </param>
+	<param name="F3_2_2R" type="up"> </param>
+	<param name="AZ2TT" type="out"> </param>
+</blind>
+<blind name="ADD" start="true" time="0">
+	<param name="AZ2TT" type="up"> </param>
+	<param name="F3_2_1R" type="up"> </param>
+	<param name="Con1000" type="up"> </param>
+	<param name="BarsDU:B8MC01IP2" type="out"> </param>
+</blind>
+<blind name="SWITCH" start="true" time="0">
+	<param name="F4_5R" type="up"> </param>
+	<param name="BarsDU:R0MW11IP2" type="out"> </param>
+</blind>
+<blind name="SWITCH" start="true" time="0">
+	<param name="F11_5R" type="up"> </param>
+	<param name="BarsDU:R0MW12IP2" type="out"> </param>
+</blind>
+<blind name="SWITCH" start="true" time="0">
+	<param name="F7_2R" type="up"> </param>
+	<param name="BarsDU:R0MW14IP2" type="out"> </param>
+</blind>
+
+</Blinds>

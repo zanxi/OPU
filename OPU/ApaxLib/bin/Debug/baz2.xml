@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+    <format maxRecords="2147483647">
+        <fields>
+            <field description="Имя" name="name" type="S">
+                <validators>&lt;L=1 50&gt;&lt;R=\w+^^Имя может содержать только латинские буквы, цифры и символы подчеркивания&gt;</validators>
+                <defaultValue/>
+            </field>
+            <field description="Описание" name="description" type="S">
+                <validators>&lt;L=1 200&gt;&lt;R=[^\p{Cntrl}]*^^Описание может содержать только печатные символы&gt;</validators>
+                <defaultValue/>
+            </field>
+            <field description="Тип" name="type" type="I">
+                <selectionValues>
+                    <option description="Дискретный выход (Coil)">0</option>
+                    <option description="Дискретный вход (Discrete Input)">1</option>
+                    <option description="Входной регистр (Input Register)">2</option>
+                    <option description="Выходной регистр (Holding Register)">3</option>
+                </selectionValues>
+                <defaultValue>0</defaultValue>
+            </field>
+            <field description="Формат" name="format" type="I">
+                <selectionValues>
+                    <option description="2-байтный Int Unsigned">2</option>
+                    <option description="2-байтный Int Signed">3</option>
+                    <option description="4-байтный Int Unsigned">4</option>
+                    <option description="4-байтный Int Signed">5</option>
+                    <option description="4-байтный Int Unsigned Swapped">6</option>
+                    <option description="4-байтный Int Signed Swapped">7</option>
+                    <option description="4-байтный Float">8</option>
+                    <option description="4-байтный Float Swapped">9</option>
+                    <option description="8-байтный Int Signed">11</option>
+                    <option description="8-байтный IntSignedSwapped">13</option>
+                    <option description="8-байтный Float">14</option>
+                    <option description="8-байтный FloatSwapped">15</option>
+                    <option description="2-байтный Byte Bcd">16</option>
+                    <option description="4-байтный Bcd">17</option>
+                    <option description="Символьный">18</option>
+                    <option description="Строковый">19</option>
+                </selectionValues>
+                <defaultValue>2</defaultValue>
+            </field>
+            <field description="Адрес регистра (десятичный)"
+                name="address" type="I">
+                <defaultValue>0</defaultValue>
+            </field>
+            <field description="Размер" name="size" type="I">
+                <validators>&lt;L=1 255&gt;</validators>
+                <defaultValue>1</defaultValue>
+            </field>
+            <field description="unitId" name="unitId" type="I">
+                <defaultValue>1</defaultValue>
+            </field>
+        </fields>
+    </format>
+    <records>
+        <record>
+            <value name="name">R0VN61LS1</value>
+            <value name="description">(R0VN61LS1) ПС по мощности канал 1</value>
+        </record>
+        <record>
+            <value name="name">R0VN62LS1</value>
+            <value name="description">(R0VN62LS1) ПС по мощности канал 2</value>
+            <value name="address">1</value>
+        </record>
+        <record>
+            <value name="name">R0VN63LS3</value>
+            <value name="description">(R0VN63LS3) ПС по мощности канал 3</value>
+            <value name="address">2</value>
+        </record>
+        <record>
+            <value name="name">R0VN64LS4</value>
+            <value name="description">(R0VN64LS4) ПС по мощности канал 4</value>
+            <value name="address">3</value>
+        </record>
+        <record>
+            <value name="name">R0VN65LS1</value>
+            <value name="description">(R0VN65LS1) ПС по периоду разгона канал 1</value>
+            <value name="address">4</value>
+        </record>
+        <record>
+            <value name="name">R0VN66LS2</value>
+            <value name="description">(R0VN66LS2) ПС по периоду разгона канал 2</value>
+            <value name="address">5</value>
+        </record>
+        <record>
+            <value name="name">R0VN67LS3</value>
+            <value name="description">(R0VN67LS3) ПС по периоду разгона канал 3</value>
+            <value name="address">6</value>
+        </record>
+        <record>
+            <value name="name">R0VN68LS4</value>
+            <value name="description">(R0VN68LS4) ПС по периоду разгона канал 4</value>
+            <value name="address">7</value>
+        </record>
+        <record>
+            <value name="name">R0EE02LDU</value>
+            <value name="description">(R0EE02LDU) Питание  АКНП  отключить</value>
+            <value name="address">8</value>
+        </record>
+        <record>
+            <value name="name">R0MD34LP1</value>
+            <value name="description">(R0MD34LP1) Кнопка "Квитировать"</value>
+            <value name="address">9</value>
+        </record>
+        <record>
+            <value name="name">A0VT61LZ2</value>
+            <value name="description">(A0VT61LZ2) ПС по температуре в АЗ1</value>
+            <value name="type">1</value>
+        </record>
+        <record>
+            <value name="name">A0VT71LZ2</value>
+            <value name="description">(A0VT71LZ2) АС по температуре в АЗ1</value>
+            <value name="type">1</value>
+            <value name="address">1</value>
+        </record>
+        <record>
+            <value name="name">A1VP41LZ2</value>
+            <value name="description">(A1VP41LZ2) Давление СБРОС ББ1 ниже АС</value>
+            <value name="type">1</value>
+            <value name="address">2</value>
+        </record>
+        <record>
+            <value name="name">A1VP51LZ2</value>
+            <value name="description">(A1VP51LZ2) Давление СБРОС ББ1 ниже ПС</value>
+            <value name="type">1</value>
+            <value name="address">3</value>
+        </record>
+        <record>
+            <value name="name">B1VP41LZ2</value>
+            <value name="description">(B1VP41LZ2) Давление СБРОС ББ2 ниже АС</value>
+            <value name="type">1</value>
+            <value name="address">4</value>
+        </record>
+        <record>
+            <value name="name">B1VP51LZ2</value>
+            <value name="description">(B1VP51LZ2) Давление СБРОС ББ2 ниже ПС</value>
+            <value name="type">1</value>
+            <value name="address">5</value>
+        </record>
+        <record>
+            <value name="name">B1VP81LZ2</value>
+            <value name="description">(B1VP81LZ2) Давление СБРОС ББ2 в норме</value>
+            <value name="type">1</value>
+            <value name="address">6</value>
+        </record>
+        <record>
+            <value name="name">A1VP81LZ2</value>
+            <value name="description">(A1VP81LZ2) Давление СБРОС ББ1 в норме</value>
+            <value name="type">1</value>
+            <value name="address">7</value>
+        </record>
+        <record>
+            <value name="name">A2VP41LZ2</value>
+            <value name="description">(A2VP41LZ2) Давление СБРОС РБ1 ниже АС</value>
+            <value name="type">1</value>
+            <value name="address">8</value>
+        </record>
+        <record>
+            <value name="name">A2VP51LZ2</value>
+            <value name="description">(A2VP51LZ2) Давление СБРОС РБ1 ниже ПС</value>
+            <value name="type">1</value>
+            <value name="address">9</value>
+        </record>
+        <record>
+            <value name="name">B2VP41LZ2</value>
+            <value name="description">(B2VP41LZ2) Давление СБРОС РБ2 ниже АС</value>
+            <value name="type">1</value>
+            <value name="address">10</value>
+        </record>
+        <record>
+            <value name="name">B2VP51LZ2</value>
+            <value name="description">(B2VP51LZ2) Давление СБРОС РБ2 ниже ПС</value>
+            <value name="type">1</value>
+            <value name="address">11</value>
+        </record>
+        <record>
+            <value name="name">B2VP81LZ2</value>
+            <value name="description">(B2VP81LZ2) Давление СБРОС РБ2 в норме</value>
+            <value name="type">1</value>
+            <value name="address">12</value>
+        </record>
+        <record>
+            <value name="name">A2VP81LZ2</value>
+            <value name="description">(A2VP81LZ2) Давление СБРОС РБ1 в норме</value>
+            <value name="type">1</value>
+            <value name="address">13</value>
+        </record>
+        <record>
+            <value name="name">R0ET01LZ2</value>
+            <value name="description">(R0ET01LZ2) Признак наличия неисправности по температуре  АЗ1</value>
+            <value name="type">1</value>
+            <value name="address">14</value>
+        </record>
+        <record>
+            <value name="name">A0VP41LZ2</value>
+            <value name="description">(A0VP41LZ2) Давление АЗ1 ниже АС</value>
+            <value name="type">1</value>
+            <value name="address">15</value>
+        </record>
+        <record>
+            <value name="name">A0VP51LZ2</value>
+            <value name="description">(A0VP51LZ2) Давление АЗ1 ниже ПС</value>
+            <value name="type">1</value>
+            <value name="address">16</value>
+        </record>
+        <record>
+            <value name="name">B0VP41LZ2</value>
+            <value name="description">(B0VP41LZ2) Давление АЗ2 ниже АС</value>
+            <value name="type">1</value>
+            <value name="address">17</value>
+        </record>
+        <record>
+            <value name="name">B0VP51LZ2</value>
+            <value name="description">(B0VP51LZ2) Давление  АЗ2 ниже ПС</value>
+            <value name="type">1</value>
+            <value name="address">18</value>
+        </record>
+        <record>
+            <value name="name">B0VP81LZ2</value>
+            <value name="description">(B0VP81LZ2) Давление АЗ2 в норме</value>
+            <value name="type">1</value>
+            <value name="address">19</value>
+        </record>
+        <record>
+            <value name="name">A0VP81LZ2</value>
+            <value name="description">(A0VP81LZ2) Давление  АЗ1 в норме</value>
+            <value name="type">1</value>
+            <value name="address">20</value>
+        </record>
+        <record>
+            <value name="name">R0VP41LZ2</value>
+            <value name="description">(R0VP41LZ2) Давление в СИСТЕМЕ ниже АС</value>
+            <value name="type">1</value>
+            <value name="address">21</value>
+        </record>
+        <record>
+            <value name="name">R0VP51LZ2</value>
+            <value name="description">(R0VP51LZ2) Давление в СИСТЕМЕ ниже ПС</value>
+            <value name="type">1</value>
+            <value name="address">22</value>
+        </record>
+        <record>
+            <value name="name">R0VP81LZ2</value>
+            <value name="description">(R0VP81LZ2) Давление  в СИСТЕМЕ в норме</value>
+            <value name="type">1</value>
+            <value name="address">23</value>
+        </record>
+        <record>
+            <value name="name">R0ET02LZ2</value>
+            <value name="description">(R0ET02LZ2) Признак наличия неисправности по температуре АЗ2</value>
+            <value name="type">1</value>
+            <value name="address">24</value>
+        </record>
+        <record>
+            <value name="name">A0VP71LZ2</value>
+            <value name="description">(A0VP71LZ2) АЗ по АС любого давления для АЗ1</value>
+            <value name="type">1</value>
+            <value name="address">25</value>
+        </record>
+        <record>
+            <value name="name">B0VP71LZ2</value>
+            <value name="description">(B0VP71LZ2) АЗ по АС любого давления для АЗ2</value>
+            <value name="type">1</value>
+            <value name="address">26</value>
+        </record>
+        <record>
+            <value name="name">R0VN61LZ2</value>
+            <value name="description">(R0VN61LZ2) ПС по мощности канал 1</value>
+            <value name="type">1</value>
+            <value name="address">27</value>
+        </record>
+        <record>
+            <value name="name">R0VN62LZ2</value>
+            <value name="description">(R0VN62LZ2) ПС по мощности канал 2</value>
+            <value name="type">1</value>
+            <value name="address">28</value>
+        </record>
+        <record>
+            <value name="name">R0VN63LZ2</value>
+            <value name="description">(R0VN63LZ2) ПС по мощности канал 3</value>
+            <value name="type">1</value>
+            <value name="address">29</value>
+        </record>
+        <record>
+            <value name="name">R0VN64LZ2</value>
+            <value name="description">(R0VN64LZ2) ПС по мощности канал 4</value>
+            <value name="type">1</value>
+            <value name="address">30</value>
+        </record>
+        <record>
+            <value name="name">R0VN65LZ2</value>
+            <value name="description">(R0VN65LZ2) ПС по периоду разгона канал 1</value>
+            <value name="type">1</value>
+            <value name="address">31</value>
+        </record>
+        <record>
+            <value name="name">R0VN66LZ2</value>
+            <value name="description">(R0VN66LZ2) ПС по периоду разгона канал 2</value>
+            <value name="type">1</value>
+            <value name="address">32</value>
+        </record>
+        <record>
+            <value name="name">R0VN67LZ2</value>
+            <value name="description">(R0VN67LZ2) ПС по периоду разгона канал 3</value>
+            <value name="type">1</value>
+            <value name="address">33</value>
+        </record>
+        <record>
+            <value name="name">R0VN68LZ2</value>
+            <value name="description">(R0VN68LZ2) ПС по периоду разгона канал 4</value>
+            <value name="type">1</value>
+            <value name="address">34</value>
+        </record>
+        <record>
+            <value name="name">R0VN71LZ2</value>
+            <value name="description">(R0VN71LZ2) АС по мощности канал 1</value>
+            <value name="type">1</value>
+            <value name="address">35</value>
+        </record>
+        <record>
+            <value name="name">R0VN72LZ2</value>
+            <value name="description">(R0VN72LZ2) АС по мощности канал 2</value>
+            <value name="type">1</value>
+            <value name="address">36</value>
+        </record>
+        <record>
+            <value name="name">R0VN73LZ2</value>
+            <value name="description">(R0VN73LZ2) АС по мощности канал 3</value>
+            <value name="type">1</value>
+            <value name="address">37</value>
+        </record>
+        <record>
+            <value name="name">R0VN74LZ2</value>
+            <value name="description">(R0VN74LZ2) АС по мощности канал 4</value>
+            <value name="type">1</value>
+            <value name="address">38</value>
+        </record>
+        <record>
+            <value name="name">R0VN75LZ2</value>
+            <value name="description">(R0VN75LZ2) АС по периоду разгона канал 1</value>
+            <value name="type">1</value>
+            <value name="address">39</value>
+        </record>
+        <record>
+            <value name="name">R0VN76LZ2</value>
+            <value name="description">(R0VN76LZ2) АС по периоду разгона канал  2</value>
+            <value name="type">1</value>
+            <value name="address">40</value>
+        </record>
+        <record>
+            <value name="name">R0VN77LZ2</value>
+            <value name="description">(R0VN77LZ2) АС по периоду разгона канал  3</value>
+            <value name="type">1</value>
+            <value name="address">41</value>
+        </record>
+        <record>
+            <value name="name">R0VN78LZ2</value>
+            <value name="description">(R0VN78LZ2) АС по периоду разгона канал  4</value>
+            <value name="type">1</value>
+            <value name="address">42</value>
+        </record>
+        <record>
+            <value name="name">A3VZ31LZ2</value>
+            <value name="description">(A3VZ31LZ2) АЗ от ВУ ИС1</value>
+            <value name="type">1</value>
+            <value name="address">43</value>
+        </record>
+        <record>
+            <value name="name">B3VZ31LZ2</value>
+            <value name="description">(B3VZ31LZ2) АЗ от ВУ ИС2</value>
+            <value name="type">1</value>
+            <value name="address">44</value>
+        </record>
+        <record>
+            <value name="name">A3VZ11LZ2</value>
+            <value name="description">(A3VZ11LZ2) АЗ от НУП ИС1</value>
+            <value name="type">1</value>
+            <value name="address">45</value>
+        </record>
+        <record>
+            <value name="name">B3VZ11LZ2</value>
+            <value name="description">(B3VZ11LZ2) АЗ от НУП ИС2</value>
+            <value name="type">1</value>
+            <value name="address">46</value>
+        </record>
+        <record>
+            <value name="name">R0VN69LZ2</value>
+            <value name="description">(R0VN69LZ2) ПС по усредненному периоду</value>
+            <value name="type">1</value>
+            <value name="address">47</value>
+        </record>
+        <record>
+            <value name="name">R0VN79LZ2</value>
+            <value name="description">(R0VN79LZ2) АС по усредненному периоду</value>
+            <value name="type">1</value>
+            <value name="address">48</value>
+        </record>
+        <record>
+            <value name="name">R0VZ71LZ2</value>
+            <value name="description">(R0VZ71LZ2) Обобщенный сигнал АЗ</value>
+            <value name="type">1</value>
+            <value name="address">49</value>
+        </record>
+        <record>
+            <value name="name">R0VN70LZ2</value>
+            <value name="description">(R0VN70LZ2) АЗ по АС мощности РУ</value>
+            <value name="type">1</value>
+            <value name="address">50</value>
+        </record>
+        <record>
+            <value name="name">R0VN80LZ2</value>
+            <value name="description">(R0VN80LZ2) АЗ по АС периода разгона РУ</value>
+            <value name="type">1</value>
+            <value name="address">51</value>
+        </record>
+        <record>
+            <value name="name">A0EE01LZ2</value>
+            <value name="description">(A0EE01LZ2) Исправность АКНП1</value>
+            <value name="type">1</value>
+            <value name="address">52</value>
+        </record>
+        <record>
+            <value name="name">A0EE04LZ2</value>
+            <value name="description">(A0EE04LZ2) Исправность АКНП4</value>
+            <value name="type">1</value>
+            <value name="address">53</value>
+        </record>
+        <record>
+            <value name="name">A0EE02LZ2</value>
+            <value name="description">(A0EE02LZ2) Исправность АКНП2</value>
+            <value name="type">1</value>
+            <value name="address">54</value>
+        </record>
+        <record>
+            <value name="name">A0EE03LZ2</value>
+            <value name="description">(A0EE03LZ2) Исправность АКНП3</value>
+            <value name="type">1</value>
+            <value name="address">55</value>
+        </record>
+        <record>
+            <value name="name">A0EE05LZ2</value>
+            <value name="description">(A0EE05LZ2) Исправность сети АКНП1</value>
+            <value name="type">1</value>
+            <value name="address">56</value>
+        </record>
+        <record>
+            <value name="name">A0EE06LZ2</value>
+            <value name="description">(A0EE06LZ2) Исправность сети АКНП2</value>
+            <value name="type">1</value>
+            <value name="address">57</value>
+        </record>
+        <record>
+            <value name="name">A0EE07LZ2</value>
+            <value name="description">(A0EE07LZ2) Исправность сети АКНП3</value>
+            <value name="type">1</value>
+            <value name="address">58</value>
+        </record>
+        <record>
+            <value name="name">A0EE08LZ2</value>
+            <value name="description">(A0EE08LZ2) Исправность сети АКНП4</value>
+            <value name="type">1</value>
+            <value name="address">59</value>
+        </record>
+        <record>
+            <value name="name">A0VZ71LZ2</value>
+            <value name="description">(A0VZ71LZ2) Обобщенный сигнал АС по АЗ1</value>
+            <value name="type">1</value>
+            <value name="address">60</value>
+        </record>
+        <record>
+            <value name="name">A0EE00LZ2</value>
+            <value name="description">(A0EE00LZ2) Исправность АКНП АЗ1</value>
+            <value name="type">1</value>
+            <value name="address">61</value>
+        </record>
+        <record>
+            <value name="name">B0EE00LZ2</value>
+            <value name="description">(B0EE00LZ2) Исправность АКНП АЗ2</value>
+            <value name="type">1</value>
+            <value name="address">62</value>
+        </record>
+        <record>
+            <value name="name">B0VZ71LZ2</value>
+            <value name="description">(B0VZ71LZ2) Обобщенный сигнал АС по АЗ2</value>
+            <value name="type">1</value>
+            <value name="address">63</value>
+        </record>
+        <record>
+            <value name="name">A0VN71LZ2</value>
+            <value name="description">(A0VN71LZ2) АЗ по АС мощности  АЗ1</value>
+            <value name="type">1</value>
+            <value name="address">64</value>
+        </record>
+        <record>
+            <value name="name">B0VN71LZ2</value>
+            <value name="description">(B0VN71LZ2) АЗ по АС мощности  АЗ2</value>
+            <value name="type">1</value>
+            <value name="address">65</value>
+        </record>
+        <record>
+            <value name="name">A0VN81LZ2</value>
+            <value name="description">(A0VN81LZ2) АЗ по АС периода разгона АЗ1</value>
+            <value name="type">1</value>
+            <value name="address">66</value>
+        </record>
+        <record>
+            <value name="name">B0VN81LZ2</value>
+            <value name="description">(B0VN81LZ2) АЗ по АС периода разгона АЗ2</value>
+            <value name="type">1</value>
+            <value name="address">67</value>
+        </record>
+        <record>
+            <value name="name">R7II73LZ2</value>
+            <value name="description">(R7II73LZ2) Сработала АС IIУР</value>
+            <value name="type">1</value>
+            <value name="address">68</value>
+        </record>
+        <record>
+            <value name="name">R7II71LZ2</value>
+            <value name="description">(R7II71LZ2) Сработала АС IУР (датчик 1)</value>
+            <value name="type">1</value>
+            <value name="address">69</value>
+        </record>
+        <record>
+            <value name="name">R7II72LZ2</value>
+            <value name="description">(R7II72LZ2) Сработала АС IУР (датчик 2)</value>
+            <value name="type">1</value>
+            <value name="address">70</value>
+        </record>
+        <record>
+            <value name="name">A0VP73LZ2</value>
+            <value name="description">(A0VP73LZ2) ПС любого давления для АЗ1</value>
+            <value name="type">1</value>
+            <value name="address">71</value>
+        </record>
+        <record>
+            <value name="name">B0VP73LZ2</value>
+            <value name="description">(B0VP73LZ2) ПС давления для АЗ2</value>
+            <value name="type">1</value>
+            <value name="address">72</value>
+        </record>
+        <record>
+            <value name="name">R0VP73LZ2</value>
+            <value name="description">(R0VP73LZ2) ПС давления для РУ</value>
+            <value name="type">1</value>
+            <value name="address">73</value>
+        </record>
+        <record>
+            <value name="name">B0VT61LZ2</value>
+            <value name="description">(B0VT61LZ2) ПС по температуре в АЗ2</value>
+            <value name="type">1</value>
+            <value name="address">74</value>
+        </record>
+        <record>
+            <value name="name">B0VT71LZ2</value>
+            <value name="description">(B0VT71LZ2) АС по температуре в АЗ2</value>
+            <value name="type">1</value>
+            <value name="address">75</value>
+        </record>
+        <record>
+            <value name="name">A1VN71LZ2</value>
+            <value name="description">(A1VN71LZ2) Блокировка автоматического подъёма ББ</value>
+            <value name="type">1</value>
+            <value name="address">76</value>
+        </record>
+        <record>
+            <value name="name">R0VW13LDU</value>
+            <value name="description">(R0VW13LDU) Индикация выбора "АЗ1" или "АЗ1+АЗ2"</value>
+            <value name="type">1</value>
+            <value name="address">77</value>
+        </record>
+        <record>
+            <value name="name">R0VW23LDU</value>
+            <value name="description">(R0VW23LDU) Индикация выбора "АЗ2" или "АЗ1+АЗ2"</value>
+            <value name="type">1</value>
+            <value name="address">78</value>
+        </record>
+        <record>
+            <value name="name">R0AD14LDU</value>
+            <value name="description">(R0AD14LDU) Имитация срабатывания верхней АС II УР</value>
+            <value name="type">1</value>
+            <value name="address">79</value>
+        </record>
+        <record>
+            <value name="name">R0AD16LDU</value>
+            <value name="description">(R0AD16LDU) Имитация срабатывания верхней АС I УР</value>
+            <value name="type">1</value>
+            <value name="address">80</value>
+        </record>
+        <record>
+            <value name="name">A0IT01IZ2</value>
+            <value name="description">(A0IT01IZ2) Температура АЗ1</value>
+            <value name="type">2</value>
+            <value name="format">3</value>
+        </record>
+        <record>
+            <value name="name">A0CT01IZ2</value>
+            <value name="description">(A0CT01IZ2) Температура АЗ1</value>
+            <value name="type">2</value>
+            <value name="format">8</value>
+            <value name="address">1</value>
+        </record>
+        <record>
+            <value name="name">A1IP01IZ2</value>
+            <value name="description">(A1IP01IZ2) Текущее давление СБРОС ББ1</value>
+            <value name="type">2</value>
+            <value name="format">3</value>
+            <value name="address">3</value>
+        </record>
+        <record>
+            <value name="name">B1IP01IZ2</value>
+            <value name="description">(B1IP01IZ2) Текущее давление СБРОС ББ2</value>
+            <value name="type">2</value>
+            <value name="format">3</value>
+            <value name="address">4</value>
+        </record>
+        <record>
+            <value name="name">A1CP01RZ2</value>
+            <value name="description">(A1CP01RZ2) Текущее давление СБРОС ББ1</value>
+            <value name="type">2</value>
+            <value name="format">8</value>
+            <value name="address">5</value>
+        </record>
+        <record>
+            <value name="name">B1CP01RZ2</value>
+            <value name="description">(B1CP01RZ2) Текущее давление СБРОС ББ2</value>
+            <value name="type">2</value>
+            <value name="format">8</value>
+            <value name="address">7</value>
+        </record>
+        <record>
+            <value name="name">A2CP01RZ2</value>
+            <value name="description">(A2CP01RZ2) Текущее давление СБРОС РБ1</value>
+            <value name="type">2</value>
+            <value name="format">8</value>
+            <value name="address">9</value>
+        </record>
+        <record>
+            <value name="name">B2CP01RZ2</value>
+            <value name="description">(B2CP01RZ2) Текущее давление СБРОС РБ2</value>
+            <value name="type">2</value>
+            <value name="format">8</value>
+            <value name="address">11</value>
+        </record>
+        <record>
+            <value name="name">A2IP01IZ2</value>
+            <value name="description">(A2IP01IZ2) Текущее давление СБРОС РБ1</value>
+            <value name="type">2</value>
+            <value name="format">3</value>
+            <value name="address">13</value>
+        </record>
+        <record>
+            <value name="name">B2IP01IZ2</value>
+            <value name="description">(B2IP01IZ2) Текущее давление СБРОС РБ2</value>
+            <value name="type">2</value>
+            <value name="format">3</value>
+            <value name="address">14</value>
+        </record>
+        <record>
+            <value name="name">B0IT01IZ2</value>
+            <value name="description">(B0IT01IZ2) Температура АЗ2</value>
+            <value name="type">2</value>
+            <value name="format">3</value>
+            <value name="address">15</value>
+        </record>
+        <record>
+            <value name="name">R0IP00IZ2</value>
+            <value name="description">(R0IP00IZ2) Текущее давление в СИСТЕМЕ</value>
+            <value name="type">2</value>
+            <value name="format">3</value>
+            <value name="address">16</value>
+        </record>
+        <record>
+            <value name="name">A0CP01RZ2</value>
+            <value name="description">(A0CP01RZ2) Текущее давление  АЗ1</value>
+            <value name="type">2</value>
+            <value name="format">8</value>
+            <value name="address">17</value>
+        </record>
+        <record>
+            <value name="name">B0CP02RZ2</value>
+            <value name="description">(B0CP02RZ2) Текущее давление АЗ2</value>
+            <value name="type">2</value>
+            <value name="format">8</value>
+            <value name="address">19</value>
+        </record>
+        <record>
+            <value name="name">A0IP01IZ2</value>
+            <value name="description">(A0IP01IZ2) Текущее давление АЗ1</value>
+            <value name="type">2</value>
+            <value name="format">3</value>
+            <value name="address">21</value>
+        </record>
+        <record>
+            <value name="name">B0IP01IZ2</value>
+            <value name="description">(B0IP01IZ2) Текущее давление АЗ2</value>
+            <value name="type">2</value>
+            <value name="format">3</value>
+            <value name="address">22</value>
+        </record>
+        <record>
+            <value name="name">R0CP01RZ2</value>
+            <value name="description">(R0CP01RZ2) Текущее давление  в СИСТЕМЕ</value>
+            <value name="type">2</value>
+            <value name="format">8</value>
+            <value name="address">23</value>
+        </record>
+        <record>
+            <value name="name">B0EP02IZ2</value>
+            <value name="description">(B0EP02IZ2) Индикатор -Давление  АЗ2 ниже АС</value>
+            <value name="type">2</value>
+            <value name="address">25</value>
+        </record>
+        <record>
+            <value name="name">A0EP02IZ2</value>
+            <value name="description">(A0EP02IZ2) Индикатор -Давление  АЗ1 ниже АС</value>
+            <value name="type">2</value>
+            <value name="address">26</value>
+        </record>
+        <record>
+            <value name="name">R0VN01RZ2</value>
+            <value name="description">(R0VN01RZ2) Уровень мощности по каналу 1</value>
+            <value name="type">2</value>
+            <value name="format">8</value>
+            <value name="address">27</value>
+        </record>
+        <record>
+            <value name="name">R0VN02RZ2</value>
+            <value name="description">(R0VN02RZ2) Уровень мощности по каналу 2</value>
+            <value name="type">2</value>
+            <value name="format">8</value>
+            <value name="address">29</value>
+        </record>
+        <record>
+            <value name="name">R0VN03RZ2</value>
+            <value name="description">(R0VN03RZ2) Уровень мощности по каналу 3</value>
+            <value name="type">2</value>
+            <value name="format">8</value>
+            <value name="address">31</value>
+        </record>
+        <record>
+            <value name="name">R0VN04RZ2</value>
+            <value name="description">(R0VN04RZ2) Уровень мощности по каналу 4</value>
+            <value name="type">2</value>
+            <value name="format">8</value>
+            <value name="address">33</value>
+        </record>
+        <record>
+            <value name="name">R0VN05RZ2</value>
+            <value name="description">(R0VN05RZ2) Период разгона по каналу 1</value>
+            <value name="type">2</value>
+            <value name="format">8</value>
+            <value name="address">35</value>
+        </record>
+        <record>
+            <value name="name">R0VN06RZ2</value>
+            <value name="description">(R0VN06RZ2) Период разгона по каналу 2</value>
+            <value name="type">2</value>
+            <value name="format">8</value>
+            <value name="address">37</value>
+        </record>
+        <record>
+            <value name="name">R0VN07RZ2</value>
+            <value name="description">(R0VN07RZ2) Период разгона по каналу 3</value>
+            <value name="type">2</value>
+            <value name="format">8</value>
+            <value name="address">39</value>
+        </record>
+        <record>
+            <value name="name">R0VN08RZ2</value>
+            <value name="description">(R0VN08RZ2) Период разгона по каналу 4</value>
+            <value name="type">2</value>
+            <value name="format">8</value>
+            <value name="address">41</value>
+        </record>
+        <record>
+            <value name="name">R0VN09RZ2</value>
+            <value name="description">(R0VN09RZ2) Усредненный период разгона</value>
+            <value name="type">2</value>
+            <value name="format">8</value>
+            <value name="address">43</value>
+        </record>
+        <record>
+            <value name="name">R0VR02RZ2</value>
+            <value name="description">(R0VR02RZ2) Усредненная реактивность</value>
+            <value name="type">2</value>
+            <value name="format">8</value>
+            <value name="address">45</value>
+        </record>
+        <record>
+            <value name="name">R7II74RZ2</value>
+            <value name="description">(R7II74RZ2) Уровень радиации в реакторном зале</value>
+            <value name="type">2</value>
+            <value name="format">8</value>
+            <value name="address">47</value>
+        </record>
+        <record>
+            <value name="name">R0VZ05UZ2</value>
+            <value name="description">(R0VZ05UZ2) Индикатор причины сброса</value>
+            <value name="type">2</value>
+            <value name="format">5</value>
+            <value name="address">49</value>
+        </record>
+        <record>
+            <value name="name">R0VN11RZ2</value>
+            <value name="description">(R0VN11RZ2) Средняя мощность по БАЗ1</value>
+            <value name="type">2</value>
+            <value name="format">8</value>
+            <value name="address">51</value>
+        </record>
+        <record>
+            <value name="name">B0EP03IZ2</value>
+            <value name="description">(B0EP03IZ2) Индикатор -Давление  АЗ2 ниже ПС</value>
+            <value name="type">2</value>
+            <value name="address">53</value>
+        </record>
+        <record>
+            <value name="name">A0EP03IZ2</value>
+            <value name="description">(A0EP03IZ2) Индикатор -Давление  АЗ1 ниже ПС</value>
+            <value name="type">2</value>
+            <value name="address">54</value>
+        </record>
+        <record>
+            <value name="name">B0CT01IZ2</value>
+            <value name="description">(B0CT01IZ2) Температура АЗ2</value>
+            <value name="type">2</value>
+            <value name="format">8</value>
+            <value name="address">55</value>
+        </record>
+        <record>
+            <value name="name">R0VN02RS1</value>
+            <value name="description">(R0VN02RS1) Уровень мощности по каналу 1</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+        </record>
+        <record>
+            <value name="name">R0VN02RS2</value>
+            <value name="description">(R0VN02RS2) Уровень мощности по каналу 2</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">2</value>
+        </record>
+        <record>
+            <value name="name">R0VN02RS3</value>
+            <value name="description">(R0VN02RS3) Уровень мощности по каналу 3</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">4</value>
+        </record>
+        <record>
+            <value name="name">R0VN02RS4</value>
+            <value name="description">(R0VN02RS4) Уровень мощности по каналу 4</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">6</value>
+        </record>
+        <record>
+            <value name="name">R0VN01RS1</value>
+            <value name="description">(R0VN01RS1) Период разгона по каналу 1</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">8</value>
+        </record>
+        <record>
+            <value name="name">R0VN01RS2</value>
+            <value name="description">(R0VN01RS2) Период разгона по каналу 2</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">10</value>
+        </record>
+        <record>
+            <value name="name">R0VN01RS3</value>
+            <value name="description">(R0VN01RS3) Период разгона по каналу 2</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">12</value>
+        </record>
+        <record>
+            <value name="name">R0VN01RS4</value>
+            <value name="description">(R0VN01RS4) Период разгона по каналу 4</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">14</value>
+        </record>
+        <record>
+            <value name="name">R0UT02RZZ</value>
+            <value name="description">(R0UT02RZZ) Верхний предел шкалы датчика температуры</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">16</value>
+        </record>
+        <record>
+            <value name="name">R0UT01RZZ</value>
+            <value name="description">(R0UT01RZZ) Нижний предел шкалы датчика температуры</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">18</value>
+        </record>
+        <record>
+            <value name="name">A2UP03RZZ</value>
+            <value name="description">(A2UP03RZZ) Верхний предел шкалы датчика давления на подъем/сброс РБ,ББ</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">20</value>
+        </record>
+        <record>
+            <value name="name">A2UP04RZZ</value>
+            <value name="description">(A2UP04RZZ) Нижний предел шкалы датчика давления на подъем/сброс РБ.ББ</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">22</value>
+        </record>
+        <record>
+            <value name="name">A1UP41RZZ</value>
+            <value name="description">(A1UP41RZZ) Уровень срабатывания аварийной сигнализации по давлению СБРОС ББ</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">24</value>
+        </record>
+        <record>
+            <value name="name">A1UP42RZZ</value>
+            <value name="description">(A1UP42RZZ) Граница неоднозначности срабатывания аварийной сигнализации по давлению СБРОС ББ (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">26</value>
+        </record>
+        <record>
+            <value name="name">R0UT72RZZ</value>
+            <value name="description">(R0UT72RZZ) Граница неоднозначности срабатывания аварийной сигнализации по температуре АЗ (град)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">28</value>
+        </record>
+        <record>
+            <value name="name">R0UT71RZZ</value>
+            <value name="description">(R0UT71RZZ) Уровень срабатывания аварийной сигнализации по температуре АЗ</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">30</value>
+        </record>
+        <record>
+            <value name="name">R0UT62RZZ</value>
+            <value name="description">(R0UT62RZZ) Граница неоднозначности срабатывания предупредительной сигнализации по температуре АЗ (град)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">32</value>
+        </record>
+        <record>
+            <value name="name">R0UT61RZZ</value>
+            <value name="description">(R0UT61RZZ) Уровень срабатывания предупредительной сигнализации по температуре АЗ</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">34</value>
+        </record>
+        <record>
+            <value name="name">A1UP51RZZ</value>
+            <value name="description">(A1UP51RZZ) Уровень срабатывания предупредительной сигнализации по давлению СБРОС ББ (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">36</value>
+        </record>
+        <record>
+            <value name="name">A1UP82RZZ</value>
+            <value name="description">(A1UP82RZZ) Нижняя граница нормализации давления СБРОС ББ (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">38</value>
+        </record>
+        <record>
+            <value name="name">A1UP81RZZ</value>
+            <value name="description">(A1UP81RZZ) Нижняя граница неоднозначности нормализации давления СБРОС ББ (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">40</value>
+        </record>
+        <record>
+            <value name="name">A1UP84RZZ</value>
+            <value name="description">(A1UP84RZZ) Верхняя граница неоднозначности нормализации давления СБРОС ББ (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">42</value>
+        </record>
+        <record>
+            <value name="name">A2UP41RZZ</value>
+            <value name="description">(A2UP41RZZ) Уровень срабатывания аварийной сигнализации по давлению СБРОС РБ</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">44</value>
+        </record>
+        <record>
+            <value name="name">A2UP42RZZ</value>
+            <value name="description">(A2UP42RZZ) Граница неоднозначности срабатывания аварийной сигнализации по давлению СБРОС РБ (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">46</value>
+        </record>
+        <record>
+            <value name="name">A2UP51RZZ</value>
+            <value name="description">(A2UP51RZZ) Уровень срабатывания предупредительной по давлению СБРОС РБ (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">48</value>
+        </record>
+        <record>
+            <value name="name">A2UP81RZZ</value>
+            <value name="description">(A2UP81RZZ) Нижняя граница неоднозначности нормализации давления СБРОС РБ (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">50</value>
+        </record>
+        <record>
+            <value name="name">A2UP84RZZ</value>
+            <value name="description">(A2UP84RZZ) Верхняя граница неоднозначности нормализации давления СБРОС РБ (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">52</value>
+        </record>
+        <record>
+            <value name="name">A2UP82RZZ</value>
+            <value name="description">(A2UP82RZZ) Нижняя граница нормализации давления СБРОС РБ (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">54</value>
+        </record>
+        <record>
+            <value name="name">A0UP53RZZ</value>
+            <value name="description">(A0UP53RZZ) Уровень срабатывания предупредительной по давлению АЗ1,2 (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">56</value>
+        </record>
+        <record>
+            <value name="name">A0UP43RZZ</value>
+            <value name="description">(A0UP43RZZ) Уровень срабатывания аварийной сигнализации по давлению  АЗ1,2</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">58</value>
+        </record>
+        <record>
+            <value name="name">A0UP44RZZ</value>
+            <value name="description">(A0UP44RZZ) Граница неоднозначности срабатывания аварийной сигнализации по давлению  АЗ1,2 (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">60</value>
+        </record>
+        <record>
+            <value name="name">A0UP85RZZ</value>
+            <value name="description">(A0UP85RZZ) Нижняя граница неоднозначности нормализации давления  АЗ1,2 (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">62</value>
+        </record>
+        <record>
+            <value name="name">A0UP88RZZ</value>
+            <value name="description">(A0UP88RZZ) Верхняя граница неоднозначности нормализации давления  АЗ1,2 (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">64</value>
+        </record>
+        <record>
+            <value name="name">A0UP86RZZ</value>
+            <value name="description">(A0UP86RZZ) Нижняя граница нормализации давления  АЗ1,2 (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">66</value>
+        </record>
+        <record>
+            <value name="name">A0UP03RZZ</value>
+            <value name="description">(A0UP03RZZ) Верхний предел шкалы датчика давления АЗ1,2</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">68</value>
+        </record>
+        <record>
+            <value name="name">A0UP04RZZ</value>
+            <value name="description">(A0UP04RZZ) Нижний предел шкалы датчика давления АЗ1,2</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">70</value>
+        </record>
+        <record>
+            <value name="name">R0UP04RZZ</value>
+            <value name="description">(R0UP04RZZ) Нижний предел шкалы датчика давления в СИСТЕМЕ</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">72</value>
+        </record>
+        <record>
+            <value name="name">R0UP03RZZ</value>
+            <value name="description">(R0UP03RZZ) Верхний предел шкалы датчика давления в СИСТЕМЕ</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">74</value>
+        </record>
+        <record>
+            <value name="name">R0UP43RZZ</value>
+            <value name="description">(R0UP43RZZ) Уровень срабатывания аварийной сигнализации по давлению  в СИСТЕМЕ</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">76</value>
+        </record>
+        <record>
+            <value name="name">R0UP53RZZ</value>
+            <value name="description">(R0UP53RZZ) Уровень срабатывания предупредительной по давлению в СИСТЕМЕ (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">78</value>
+        </record>
+        <record>
+            <value name="name">R0UP54RZZ</value>
+            <value name="description">(R0UP54RZZ) Граница неоднозначности срабатывания предупредительной сигнализации по давлению в СИСТЕМЕ(МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">80</value>
+        </record>
+        <record>
+            <value name="name">R0UP44RZZ</value>
+            <value name="description">(R0UP44RZZ) Граница неоднозначности срабатывания аварийной сигнализации по давлению в СИСТЕМЕ(МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">82</value>
+        </record>
+        <record>
+            <value name="name">R0UP85RZZ</value>
+            <value name="description">(R0UP85RZZ) Нижняя граница неоднозначности нормализации давления  в СИСТЕМЕ (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">84</value>
+        </record>
+        <record>
+            <value name="name">R0UP88RZZ</value>
+            <value name="description">(R0UP88RZZ) Верхняя граница неоднозначности нормализации давления  в СИСТЕМЕ (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">86</value>
+        </record>
+        <record>
+            <value name="name">R0UP87RZZ</value>
+            <value name="description">(R0UP87RZZ) Верхняя граница нормализации давления в СИСТЕМЕ (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">88</value>
+        </record>
+        <record>
+            <value name="name">R0UP86RZZ</value>
+            <value name="description">(R0UP86RZZ) Нижняя граница нормализации давления  в СИСТЕМЕ (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">90</value>
+        </record>
+        <record>
+            <value name="name">A1UP52RZZ</value>
+            <value name="description">(A1UP52RZZ) Граница неоднозначности срабатывания предупредительной сигнализации по давлению СБРОС ББ(МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">92</value>
+        </record>
+        <record>
+            <value name="name">A1UP83RZZ</value>
+            <value name="description">(A1UP83RZZ) Верхняя граница нормализации давления СБРОС ББ (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">94</value>
+        </record>
+        <record>
+            <value name="name">A2UP52RZZ</value>
+            <value name="description">(A2UP52RZZ) Граница неоднозначности срабатывания предупредительной сигнализации по давлению СБРОС РБ(МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">96</value>
+        </record>
+        <record>
+            <value name="name">A2UP83RZZ</value>
+            <value name="description">(A2UP83RZZ) Верхняя граница нормализации давления СБРОС РБ (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">98</value>
+        </record>
+        <record>
+            <value name="name">A0UP54RZZ</value>
+            <value name="description">(A0UP54RZZ) Граница неоднозначности срабатывания предупредительной сигнализации по давлению АЗ1,2(МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">100</value>
+        </record>
+        <record>
+            <value name="name">A0UP87RZZ</value>
+            <value name="description">(A0UP87RZZ) Верхняя граница нормализации давления АЗ1,2 (МПа)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">102</value>
+        </record>
+        <record>
+            <value name="name">A1UL11IZZ</value>
+            <value name="description">(A1UL11IZZ) Время задержки АЗ от ВУ ИС1</value>
+            <value name="type">3</value>
+            <value name="format">5</value>
+            <value name="address">104</value>
+        </record>
+        <record>
+            <value name="name">A1UL12IZZ</value>
+            <value name="description">(A1UL12IZZ) Время задержки АЗ от НУ ИС1(мс)</value>
+            <value name="type">3</value>
+            <value name="format">5</value>
+            <value name="address">106</value>
+        </record>
+        <record>
+            <value name="name">A1UL14IZZ</value>
+            <value name="description">(A1UL14IZZ) Время задержки АЗ от 1-2 УР(мс)</value>
+            <value name="type">3</value>
+            <value name="format">8</value>
+            <value name="address">108</value>
+        </record>
+    </records>
+</table>

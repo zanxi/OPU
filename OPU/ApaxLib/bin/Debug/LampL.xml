@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+    <format maxRecords="2147483647">
+        <fields>
+            <field description="Имя" name="name" type="S">
+              <validators>&lt;L=1 50&gt;&lt;R=\w+^^Имя может содержать только буквы, цифры и символы подчеркивания&gt;</validators>
+                <defaultValue/>
+            </field>
+            <field description="Описание" name="description" type="S">
+              <validators>&lt;L=1 200&gt;&lt;R=[^\p{Cntrl}]*^^Описание может содержать только печатные символы&gt;</validators>
+                <defaultValue/>
+            </field>
+            <field description="Тип" name="type" type="I">
+              <selectionValues>
+                <option description="Дискретный выход (Coil)">0</option>
+                <option description="Дискретный вход (Discrete Input)">1</option>
+                <option description="Входной регистр (Input Register)">2</option>
+                <option description="Выходной регистр (Holding Register)">3</option>
+                        </selectionValues>
+                <defaultValue>0</defaultValue>
+            </field>
+            <field description="Формат" name="format" type="I">
+              <selectionValues>
+                <option description="2-байтный Int Unsigned">2</option>
+                <option description="2-байтный Int Signed">3</option>
+                <option description="4-байтный Int Unsigned">4</option>
+                <option description="4-байтный Int Signed">5</option>
+                <option description="4-байтный Int Unsigned Swapped">6</option>
+                <option description="4-байтный Int Signed Swapped">7</option>
+                <option description="4-байтный Float">8</option>
+                <option description="4-байтный Float Swapped">9</option>
+                <option description="8-байтный Int Signed">11</option>
+                <option description="8-байтный Int Signed Swapped">13</option>
+                <option description="8-байтный Float">14</option>
+                <option description="8-байтный Float Swapped">15</option>
+                <option description="2-байтный BCD">16</option>
+                <option description="4-байтный BCD">17</option>
+                <option description="Символьный">18</option>
+                <option description="Строковый">19</option>
+                </selectionValues>
+                <defaultValue>2</defaultValue>
+            </field>
+            <field description="Десятичный адрес (смещение) регистра"
+                name="address" type="I">
+                <defaultValue>0</defaultValue>
+            </field>
+            <field description="Размер" name="size" type="I">
+                <validators>&lt;L=1 255&gt;</validators>
+                <defaultValue>1</defaultValue>
+            </field>
+            <field description="Идентификатор устройства (Unit ID)"
+                name="unitId" type="I">
+                <defaultValue>1</defaultValue>
+            </field>
+        </fields>
+    </format>
+    <records>
+
+<record>
+	<value name="name">L2_2L</value>
+	<value name="description">"L2_2L Давление АЗ1"</value>
+	<value name="slot">0</value>
+	<value name="address">0</value>
+</record>
+<record>
+	<value name="name">L2_3L</value>
+	<value name="description">"L2_3L Т макс АЗ1"</value>
+	<value name="slot">0</value>
+	<value name="address">1</value>
+</record>
+<record>
+	<value name="name">L4_2L</value>
+	<value name="description">"L4_2L Давление АЗ2"</value>
+	<value name="slot">0</value>
+	<value name="address">4</value>
+</record>
+<record>
+	<value name="name">L4_3L</value>
+	<value name="description">"L4_3L Т макс АЗ2"</value>
+	<value name="slot">0</value>
+	<value name="address">5</value>
+</record>
+<record>
+	<value name="name">L2_4L</value>
+	<value name="description">"L2_4L ВУ ИС1"</value>
+	<value name="slot">0</value>
+	<value name="address">2</value>
+</record>
+<record>
+	<value name="name">L4_4L</value>
+	<value name="description">"L4_4L ВУ ИС2"</value>
+	<value name="slot">0</value>
+	<value name="address">6</value>
+</record>
+<record>
+	<value name="name">L2_5L</value>
+	<value name="description">"L2_5L НУ ИС1"</value>
+	<value name="slot">0</value>
+	<value name="address">3</value>
+</record>
+<record>
+	<value name="name">L4_5L</value>
+	<value name="description">"L4_5L НУ ИС2"</value>
+	<value name="slot">0</value>
+	<value name="address">7</value>
+</record>
+<record>
+	<value name="name">L7_2L</value>
+	<value name="description">"L7_2L СБРОС ОТ"</value>
+	<value name="slot">0</value>
+	<value name="address">8</value>
+</record>
+<record>
+	<value name="name">L6_3L</value>
+	<value name="description">"L6_3L АЗ1"</value>
+	<value name="slot">0</value>
+	<value name="address">9</value>
+</record>
+<record>
+	<value name="name">L8_3L</value>
+	<value name="description">"L8_3L АЗ2"</value>
+	<value name="slot">0</value>
+	<value name="address">12</value>
+</record>
+<record>
+	<value name="name">L6_4L</value>
+	<value name="description">"L6_4L Н макс"</value>
+	<value name="slot">0</value>
+	<value name="address">10</value>
+</record>
+<record>
+	<value name="name">L6_5L</value>
+	<value name="description">"L6_5L Т разг"</value>
+	<value name="slot">0</value>
+	<value name="address">11</value>
+</record>
+<record>
+	<value name="name">L8_5L</value>
+	<value name="description">"L8_5L IIУР"</value>
+	<value name="slot">0</value>
+	<value name="address">15</value>
+</record>
+<record>
+	<value name="name">L8_4L</value>
+	<value name="description">"L8_4L IУР-1"</value>
+	<value name="slot">0</value>
+	<value name="address">13</value>
+</record>
+<record>
+	<value name="name">L9_4L</value>
+	<value name="description">"L9_4L IУР-2"</value>
+	<value name="slot">0</value>
+	<value name="address">14</value>
+</record>
+<record>
+	<value name="name">L9_8L</value>
+	<value name="description">"L9_8L Период 1К красный"</value>
+	<value name="slot">3</value>
+	<value name="address">12</value>
+</record>
+<record>
+	<value name="name">L9_9L</value>
+	<value name="description">"L9_9L Период 1К желтый"</value>
+	<value name="slot">3</value>
+	<value name="address">13</value>
+</record>
+<record>
+	<value name="name">L18_8L</value>
+	<value name="description">"L18_8L Период 2К красный"</value>
+	<value name="slot">3</value>
+	<value name="address">14</value>
+</record>
+<record>
+	<value name="name">L18_9L</value>
+	<value name="description">"L18_9L Период 2К желтый"</value>
+	<value name="slot">3</value>
+	<value name="address">15</value>
+</record>
+<record>
+	<value name="name">L27_8L</value>
+	<value name="description">"L27_8L Период 3К красный"</value>
+	<value name="slot">3</value>
+	<value name="address">20</value>
+</record>
+<record>
+	<value name="name">L27_9L</value>
+	<value name="description">"L27_9L Период 3К желтый"</value>
+	<value name="slot">3</value>
+	<value name="address">21</value>
+</record>
+<record>
+	<value name="name">L36_8L</value>
+	<value name="description">"L36_8L Период 4К красный"</value>
+	<value name="slot">3</value>
+	<value name="address">22</value>
+</record>
+<record>
+	<value name="name">L36_9L</value>
+	<value name="description">"L36_9L Период 4К желтый"</value>
+	<value name="slot">3</value>
+	<value name="address">23</value>
+</record>
+<record>
+	<value name="name">L45_8L</value>
+	<value name="description">"L45_8L Период разгона красный"</value>
+	<value name="slot">4</value>
+	<value name="address">4</value>
+</record>
+<record>
+	<value name="name">L45_9L</value>
+	<value name="description">"L45_9L Период разгона желтый"</value>
+	<value name="slot">4</value>
+	<value name="address">5</value>
+</record>
+<record>
+	<value name="name">L18_12L</value>
+	<value name="description">"L18_12L Мощность 1К красный"</value>
+	<value name="slot">3</value>
+	<value name="address">16</value>
+</record>
+<record>
+	<value name="name">L18_13L</value>
+	<value name="description">"L18_13L Мощность 1К желтый"</value>
+	<value name="slot">3</value>
+	<value name="address">17</value>
+</record>
+<record>
+	<value name="name">L18_16L</value>
+	<value name="description">"L18_16L Мощность 2К красный"</value>
+	<value name="slot">3</value>
+	<value name="address">18</value>
+</record>
+<record>
+	<value name="name">L18_17L</value>
+	<value name="description">"L18_17L Мощность 2К желтый"</value>
+	<value name="slot">3</value>
+	<value name="address">19</value>
+</record>
+<record>
+	<value name="name">L36_12L</value>
+	<value name="description">"L36_12L Мощность 3К красный"</value>
+	<value name="slot">4</value>
+	<value name="address">0</value>
+</record>
+<record>
+	<value name="name">L36_13L</value>
+	<value name="description">"L36_13L Мощность 3К желтый"</value>
+	<value name="slot">4</value>
+	<value name="address">1</value>
+</record>
+<record>
+	<value name="name">L36_16L</value>
+	<value name="description">"L36_16L Мощность 4К красный"</value>
+	<value name="slot">4</value>
+	<value name="address">2</value>
+</record>
+<record>
+	<value name="name">L36_17L</value>
+	<value name="description">"L36_17L Мощность 4К желтый"</value>
+	<value name="slot">4</value>
+	<value name="address">3</value>
+</record>
+<record>
+	<value name="name">L12_2L</value>
+	<value name="description">"L12_2L НИ1"</value>
+	<value name="slot">0</value>
+	<value name="address">16</value>
+</record>
+<record>
+	<value name="name">L12_3L</value>
+	<value name="description">"L12_3L НИ1 ВУ"</value>
+	<value name="slot">0</value>
+	<value name="address">17</value>
+</record>
+<record>
+	<value name="name">L12_5L</value>
+	<value name="description">"L12_5L НИ1 НУ"</value>
+	<value name="slot">0</value>
+	<value name="address">20</value>
+</record>
+<record>
+	<value name="name">L12_4L</value>
+	<value name="description">"L12_4L НИ1 вверх"</value>
+	<value name="slot">0</value>
+	<value name="address">18</value>
+</record>
+<record>
+	<value name="name">L13_4L</value>
+	<value name="description">"L13_4L НИ1 вниз"</value>
+	<value name="slot">0</value>
+	<value name="address">19</value>
+</record>
+<record>
+	<value name="name">L14_2L</value>
+	<value name="description">"L14_2L РБ1-СС"</value>
+	<value name="slot">0</value>
+	<value name="address">21</value>
+</record>
+<record>
+	<value name="name">L14_3L</value>
+	<value name="description">"L14_3L РБ1-СС >80"</value>
+	<value name="slot">0</value>
+	<value name="address">22</value>
+</record>
+<record>
+	<value name="name">L14_4L</value>
+	<value name="description">"L14_4L РБ1-СС вверх"</value>
+	<value name="slot">0</value>
+	<value name="address">23</value>
+</record>
+<record>
+	<value name="name">L15_4L</value>
+	<value name="description">"L15_4L РБ1-СС вниз"</value>
+	<value name="slot">1</value>
+	<value name="address">0</value>
+</record>
+<record>
+	<value name="name">L14_5L</value>
+	<value name="description">"L14_5L РБ1-СС НУ"</value>
+	<value name="slot">1</value>
+	<value name="address">1</value>
+</record>
+<record>
+	<value name="name">L16_2L</value>
+	<value name="description">"L16_2L МД31"</value>
+	<value name="slot">1</value>
+	<value name="address">2</value>
+</record>
+<record>
+	<value name="name">L16_3L</value>
+	<value name="description">"L16_3L МД31 ВУ"</value>
+	<value name="slot">1</value>
+	<value name="address">3</value>
+</record>
+<record>
+	<value name="name">L16_4L</value>
+	<value name="description">"L16_4L МД31 вверх"</value>
+	<value name="slot">1</value>
+	<value name="address">4</value>
+</record>
+<record>
+	<value name="name">L17_4L</value>
+	<value name="description">"L17_4L МД31 вниз"</value>
+	<value name="slot">1</value>
+	<value name="address">5</value>
+</record>
+<record>
+	<value name="name">L16_5L</value>
+	<value name="description">"L16_5L МД31 НУ"</value>
+	<value name="slot">1</value>
+	<value name="address">6</value>
+</record>
+<record>
+	<value name="name">L18_2L</value>
+	<value name="description">"L18_2L ИС1"</value>
+	<value name="slot">1</value>
+	<value name="address">7</value>
+</record>
+<record>
+	<value name="name">L18_3L</value>
+	<value name="description">"L18_3L ИС1 ВУ"</value>
+	<value name="slot">1</value>
+	<value name="address">8</value>
+</record>
+<record>
+	<value name="name">L18_4L</value>
+	<value name="description">"L18_4L ИС1 вверх"</value>
+	<value name="slot">1</value>
+	<value name="address">9</value>
+</record>
+<record>
+	<value name="name">L19_4L</value>
+	<value name="description">"L19_4L ИС1 вниз"</value>
+	<value name="slot">1</value>
+	<value name="address">10</value>
+</record>
+<record>
+	<value name="name">L18_5L</value>
+	<value name="description">"L18_5L ИС1 НУ"</value>
+	<value name="slot">1</value>
+	<value name="address">11</value>
+</record>
+<record>
+	<value name="name">L20_2L</value>
+	<value name="description">"L20_2L ББ1"</value>
+	<value name="slot">1</value>
+	<value name="address">12</value>
+</record>
+<record>
+	<value name="name">L20_3L</value>
+	<value name="description">"L20_3L ББ1 ВУ"</value>
+	<value name="slot">1</value>
+	<value name="address">13</value>
+</record>
+<record>
+	<value name="name">L20_4L</value>
+	<value name="description">"L20_4L ББ1 вверх"</value>
+	<value name="slot">1</value>
+	<value name="address">14</value>
+</record>
+<record>
+	<value name="name">L21_4L</value>
+	<value name="description">"L21_4L ББ1 вниз"</value>
+	<value name="slot">1</value>
+	<value name="address">15</value>
+</record>
+<record>
+	<value name="name">L20_5L</value>
+	<value name="description">"L20_5L ББ1 НУ"</value>
+	<value name="slot">1</value>
+	<value name="address">16</value>
+</record>
+<record>
+	<value name="name">L22_2L</value>
+	<value name="description">"L22_2L РБ1-СТР"</value>
+	<value name="slot">1</value>
+	<value name="address">17</value>
+</record>
+<record>
+	<value name="name">L22_3L</value>
+	<value name="description">"L22_3L РБ1-СТР ВУ"</value>
+	<value name="slot">1</value>
+	<value name="address">18</value>
+</record>
+<record>
+	<value name="name">L22_4L</value>
+	<value name="description">"L22_4L РБ1-СТР вверх"</value>
+	<value name="slot">1</value>
+	<value name="address">19</value>
+</record>
+<record>
+	<value name="name">L23_4L</value>
+	<value name="description">"L23_4L РБ1-СТР вниз"</value>
+	<value name="slot">1</value>
+	<value name="address">20</value>
+</record>
+<record>
+	<value name="name">L22_5L</value>
+	<value name="description">"L22_5L РБ1-СТР меньше 80"</value>
+	<value name="slot">1</value>
+	<value name="address">21</value>
+</record>
+<record>
+	<value name="name">L28_2L</value>
+	<value name="description">"L28_2L НИ2"</value>
+	<value name="slot">2</value>
+	<value name="address">0</value>
+</record>
+<record>
+	<value name="name">L28_3L</value>
+	<value name="description">"L28_3L НИ2 ВУ"</value>
+	<value name="slot">2</value>
+	<value name="address">1</value>
+</record>
+<record>
+	<value name="name">L28_4L</value>
+	<value name="description">"L28_4L НИ2 вверх"</value>
+	<value name="slot">2</value>
+	<value name="address">2</value>
+</record>
+<record>
+	<value name="name">L29_4L</value>
+	<value name="description">"L29_4L НИ2 вниз"</value>
+	<value name="slot">2</value>
+	<value name="address">3</value>
+</record>
+<record>
+	<value name="name">L28_5L</value>
+	<value name="description">"L28_5L НИ2 НУ"</value>
+	<value name="slot">2</value>
+	<value name="address">4</value>
+</record>
+<record>
+	<value name="name">L30_2L</value>
+	<value name="description">"L30_2L РБ2-СС"</value>
+	<value name="slot">2</value>
+	<value name="address">5</value>
+</record>
+<record>
+	<value name="name">L30_3L</value>
+	<value name="description">"L30_3L РБ2-СС ВУ"</value>
+	<value name="slot">2</value>
+	<value name="address">6</value>
+</record>
+<record>
+	<value name="name">L30_4L</value>
+	<value name="description">"L30_4L РБ2-СС вверх"</value>
+	<value name="slot">2</value>
+	<value name="address">7</value>
+</record>
+<record>
+	<value name="name">L31_4L</value>
+	<value name="description">"L31_4L РБ2-СС вниз"</value>
+	<value name="slot">2</value>
+	<value name="address">8</value>
+</record>
+<record>
+	<value name="name">L30_5L</value>
+	<value name="description">"L30_5L РБ2-СС НУ"</value>
+	<value name="slot">2</value>
+	<value name="address">9</value>
+</record>
+<record>
+	<value name="name">L32_2L</value>
+	<value name="description">"L32_2L МД32"</value>
+	<value name="slot">2</value>
+	<value name="address">10</value>
+</record>
+<record>
+	<value name="name">L32_3L</value>
+	<value name="description">"L32_3L МД32 ВУ"</value>
+	<value name="slot">2</value>
+	<value name="address">11</value>
+</record>
+<record>
+	<value name="name">L32_4L</value>
+	<value name="description">"L32_4L МД32 вверх"</value>
+	<value name="slot">2</value>
+	<value name="address">12</value>
+</record>
+<record>
+	<value name="name">L33_4L</value>
+	<value name="description">"L33_4L МД32 вниз"</value>
+	<value name="slot">2</value>
+	<value name="address">13</value>
+</record>
+<record>
+	<value name="name">L32_5L</value>
+	<value name="description">"L32_5L МД32 НУ"</value>
+	<value name="slot">2</value>
+	<value name="address">14</value>
+</record>
+<record>
+	<value name="name">L34_2L</value>
+	<value name="description">"L34_2L ИС2"</value>
+	<value name="slot">2</value>
+	<value name="address">15</value>
+</record>
+<record>
+	<value name="name">L34_3L</value>
+	<value name="description">"L34_3L ИС2 ВУ"</value>
+	<value name="slot">2</value>
+	<value name="address">16</value>
+</record>
+<record>
+	<value name="name">L34_4L</value>
+	<value name="description">"L34_4L ИС2 вверх"</value>
+	<value name="slot">2</value>
+	<value name="address">17</value>
+</record>
+<record>
+	<value name="name">L35_4L</value>
+	<value name="description">"L35_4L ИС2 вниз"</value>
+	<value name="slot">2</value>
+	<value name="address">18</value>
+</record>
+<record>
+	<value name="name">L34_5L</value>
+	<value name="description">"L34_5L ИС2 НУ"</value>
+	<value name="slot">2</value>
+	<value name="address">19</value>
+</record>
+<record>
+	<value name="name">L36_2L</value>
+	<value name="description">"L36_2L ББ2"</value>
+	<value name="slot">2</value>
+	<value name="address">20</value>
+</record>
+<record>
+	<value name="name">L36_3L</value>
+	<value name="description">"L36_3L ББ2 ВУ"</value>
+	<value name="slot">2</value>
+	<value name="address">21</value>
+</record>
+<record>
+	<value name="name">L36_4L</value>
+	<value name="description">"L36_4L ББ2 вверх"</value>
+	<value name="slot">2</value>
+	<value name="address">22</value>
+</record>
+<record>
+	<value name="name">L37_4L</value>
+	<value name="description">"L37_4L ББ2 вниз"</value>
+	<value name="slot">2</value>
+	<value name="address">23</value>
+</record>
+<record>
+	<value name="name">L36_5L</value>
+	<value name="description">"L36_5L ББ2 НУ"</value>
+	<value name="slot">3</value>
+	<value name="address">0</value>
+</record>
+<record>
+	<value name="name">L38_2L</value>
+	<value name="description">"L38_2L РБ2-СТР"</value>
+	<value name="slot">3</value>
+	<value name="address">1</value>
+</record>
+<record>
+	<value name="name">L38_3L</value>
+	<value name="description">"L38_3L РБ2-СТР ВУ"</value>
+	<value name="slot">3</value>
+	<value name="address">2</value>
+</record>
+<record>
+	<value name="name">L38_4L</value>
+	<value name="description">"L38_4L РБ2-СТР вверх"</value>
+	<value name="slot">3</value>
+	<value name="address">3</value>
+</record>
+<record>
+	<value name="name">L39_4L</value>
+	<value name="description">"L39_4L РБ2-СТР вниз"</value>
+	<value name="slot">3</value>
+	<value name="address">4</value>
+</record>
+<record>
+	<value name="name">L38_5L</value>
+	<value name="description">"L38_5L РБ2-СТР меньше 80"</value>
+	<value name="slot">3</value>
+	<value name="address">5</value>
+</record>
+<record>
+	<value name="name">L43_2L</value>
+	<value name="description">"L43_2L СТОП ББ1"</value>
+	<value name="slot">3</value>
+	<value name="address">6</value>
+</record>
+<record>
+	<value name="name">L43_3L</value>
+	<value name="description">"L43_3L СТОП РБ1"</value>
+	<value name="slot">3</value>
+	<value name="address">7</value>
+</record>
+<record>
+	<value name="name">L43_4L</value>
+	<value name="description">"L43_4L СБРОС РБ1"</value>
+	<value name="slot">3</value>
+	<value name="address">8</value>
+</record>
+<record>
+	<value name="name">L46_2L</value>
+	<value name="description">"L46_2L СТОП ББ2"</value>
+	<value name="slot">3</value>
+	<value name="address">9</value>
+</record>
+<record>
+	<value name="name">L46_3L</value>
+	<value name="description">"L46_3L СТОП РБ2"</value>
+	<value name="slot">3</value>
+	<value name="address">10</value>
+</record>
+<record>
+	<value name="name">L46_4L</value>
+	<value name="description">"L46_4L СБРОС РБ2"</value>
+	<value name="slot">3</value>
+	<value name="address">11</value>
+</record>
+<record>
+	<value name="name">LRL</value>
+	<value name="description">"LRL Lamp"</value>
+	<value name="slot">4</value>
+	<value name="address">6</value>
+</record>
+<record>
+	<value name="name">LAL</value>
+	<value name="description">"LAL Lamp"</value>
+	<value name="slot">4</value>
+	<value name="address">7</value>
+</record>
+</records>
+</table>

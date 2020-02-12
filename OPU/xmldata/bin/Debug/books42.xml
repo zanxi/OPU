@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<university ID="64" Name="SSU">
+  <StudentCount>1500</StudentCount>
+  <department Name="CSIT">
+    <Student>Alex</Student>
+  </department>
+  <department2 Name="CSIT">
+    <Student2>Alex</Student2>
+  </department2>
+
+</university>

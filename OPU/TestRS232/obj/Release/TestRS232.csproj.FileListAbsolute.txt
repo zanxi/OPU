@@ -1,0 +1,8 @@
+C:\Users\PPU1\OneDrive\ApaxLib\TestRS232\bin\Release\TestRS232.exe.config
+C:\Users\PPU1\OneDrive\ApaxLib\TestRS232\bin\Release\TestRS232.exe
+C:\Users\PPU1\OneDrive\ApaxLib\TestRS232\bin\Release\TestRS232.pdb
+C:\Users\PPU1\OneDrive\ApaxLib\TestRS232\bin\Release\NModbus4.dll
+C:\Users\PPU1\OneDrive\ApaxLib\TestRS232\bin\Release\NModbus4.xml
+C:\Users\PPU1\OneDrive\ApaxLib\TestRS232\obj\Release\TestRS232.csprojResolveAssemblyReference.cache
+C:\Users\PPU1\OneDrive\ApaxLib\TestRS232\obj\Release\TestRS232.exe
+C:\Users\PPU1\OneDrive\ApaxLib\TestRS232\obj\Release\TestRS232.pdb

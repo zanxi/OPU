@@ -1,0 +1,128 @@
+<Blinds>
+<blind name="SET" start="true" time="0">
+	<param name="CTRL:OPULCON" type="out"> </param>
+	<param name="TRUE" type="up"> </param>
+</blind>
+<blind name="LIVE" start="true" time="0">
+	<param name="CTRL:OPULLIVE" type="out"> </param>
+</blind>
+<blind name="STATUS" start="true" time="0">
+	<param name="CTRL:OPULERROR" type="out"> </param>
+</blind>
+<blind name="SWITCH" start="true" time="0">
+	<param name="F3_2_5L" type="up"> </param>
+	<param name="F3_2_4L" type="up"> </param>
+	<param name="F3_2_3L" type="up"> </param>
+	<param name="F3_2_2L" type="up"> </param>
+	<param name="IS1TT" type="out"> </param>
+</blind>
+<blind name="ADD" start="true" time="0">
+	<param name="IS1TT" type="up"> </param>
+	<param name="F3_2_1L" type="up"> </param>
+	<param name="Con10000" type="up"> </param>
+	<param name="BarsDU:A3MC01IP1" type="out"> </param>
+</blind>
+<blind name="SWITCH" start="true" time="0">
+	<param name="F33_3_5L" type="up"> </param>
+	<param name="F33_3_4L" type="up"> </param>
+	<param name="F33_3_3L" type="up"> </param>
+	<param name="F33_3_2L" type="up"> </param>
+	<param name="IS2TT" type="out"> </param>
+</blind>
+<blind name="ADD" start="true" time="0">
+	<param name="IS2TT" type="up"> </param>
+	<param name="F33_3_1L" type="up"> </param>
+	<param name="Con10000" type="up"> </param>
+	<param name="BarsDU:B3MC01IP1" type="out"> </param>
+</blind>
+<blind name="SWITCH" start="true" time="0">
+	<param name="F6_5_4L" type="up"> </param>
+	<param name="F6_5_3L" type="up"> </param>
+	<param name="F6_5_2L" type="up"> </param>
+	<param name="F6_5_1L" type="up"> </param>
+	<param name="BarsDU:A1MC01IP1" type="out"> </param>
+</blind>
+<blind name="SWITCH" start="true" time="0">
+	<param name="F38_5_4L" type="up"> </param>
+	<param name="F38_5_3L" type="up"> </param>
+	<param name="F38_5_2L" type="up"> </param>
+	<param name="F38_5_1L" type="up"> </param>
+	<param name="BarsDU:B1MC01IP1" type="out"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+	<param name="S2_8L" type="up"> </param>
+	<param name="BarsDU:A2MD12LP1" type="out"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+	<param name="B2_11L" type="up"> </param>
+	<param name="BarsDU:A2MD11LP1" type="out"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+	<param name="S4_8L" type="up"> </param>
+	<param name="BarsDU:A3MD12LP1" type="out"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+	<param name="B4_11L" type="up"> </param>
+	<param name="BarsDU:A3MD11LP1" type="out"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+	<param name="S6_8L" type="up"> </param>
+	<param name="BarsDU:A1MD12LP1" type="out"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+	<param name="B6_11L" type="up"> </param>
+	<param name="BarsDU:A1MD11LP1" type="out"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+	<param name="S8_8L" type="up"> </param>
+	<param name="BarsDU:B2MD12LP1" type="out"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+	<param name="B8_11L" type="up"> </param>
+	<param name="BarsDU:B2MD11LP1" type="out"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+	<param name="S10_8L" type="up"> </param>
+	<param name="BarsDU:B3MD12LP1" type="out"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+	<param name="B10_11L" type="up"> </param>
+	<param name="BarsDU:B3MD11LP1" type="out"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+	<param name="S12_8L" type="up"> </param>
+	<param name="BarsDU:B1MD12LP1" type="out"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+	<param name="B12_11L" type="up"> </param>
+	<param name="BarsDU:B1MD11LP1" type="out"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+	<param name="B2_6L" type="up"> </param>
+	<param name="BarsDU:R0MW17LP1" type="out"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+	<param name="S7_5L" type="up"> </param>
+	<param name="BarsDU:R0MD33LP1" type="out"> </param>
+</blind>
+<blind name="SWITCH" start="true" time="0">
+	<param name="F3_2L" type="up"> </param>
+	<param name="BarsDU:R0MW12IP1" type="out"> </param>
+</blind>
+<blind name="SWITCH" start="true" time="0">
+	<param name="F7_2L" type="up"> </param>
+	<param name="BarsDU:R0MW13IP1" type="out"> </param>
+</blind>
+<blind name="SWITCH" start="true" time="0">
+	<param name="F11_2L" type="up"> </param>
+	<param name="BarsDU:R0MW14IP1" type="out"> </param>
+</blind>
+<blind name="SWITCH" start="true" time="0">
+	<param name="F4_5L" type="up"> </param>
+	<param name="BarsDU:R0MW15IP1" type="out"> </param>
+</blind>
+<blind name="SWITCH" start="true" time="0">
+	<param name="F30_5L" type="up"> </param>
+	<param name="BarsDU:R0MW11IP1" type="out"> </param>
+</blind>
+</Blinds>

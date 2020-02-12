@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+    <format maxRecords="2147483647">
+        <fields>
+            <field description="Имя" name="name" type="S">
+              <validators>&lt;L=1 50&gt;&lt;R=\w+^^Имя может содержать только буквы, цифры и символы подчеркивания&gt;</validators>
+                <defaultValue/>
+            </field>
+            <field description="Описание" name="description" type="S">
+              <validators>&lt;L=1 200&gt;&lt;R=[^\p{Cntrl}]*^^Описание может содержать только печатные символы&gt;</validators>
+                <defaultValue/>
+            </field>
+            <field description="Тип" name="type" type="I">
+              <selectionValues>
+                <option description="Дискретный выход (Coil)">0</option>
+                <option description="Дискретный вход (Discrete Input)">1</option>
+                <option description="Входной регистр (Input Register)">2</option>
+                <option description="Выходной регистр (Holding Register)">3</option>
+                        </selectionValues>
+                <defaultValue>0</defaultValue>
+            </field>
+            <field description="Формат" name="format" type="I">
+              <selectionValues>
+                <option description="2-байтный Int Unsigned">2</option>
+                <option description="2-байтный Int Signed">3</option>
+                <option description="4-байтный Int Unsigned">4</option>
+                <option description="4-байтный Int Signed">5</option>
+                <option description="4-байтный Int Unsigned Swapped">6</option>
+                <option description="4-байтный Int Signed Swapped">7</option>
+                <option description="4-байтный Float">8</option>
+                <option description="4-байтный Float Swapped">9</option>
+                <option description="8-байтный Int Signed">11</option>
+                <option description="8-байтный Int Signed Swapped">13</option>
+                <option description="8-байтный Float">14</option>
+                <option description="8-байтный Float Swapped">15</option>
+                <option description="2-байтный BCD">16</option>
+                <option description="4-байтный BCD">17</option>
+                <option description="Символьный">18</option>
+                <option description="Строковый">19</option>
+                </selectionValues>
+                <defaultValue>2</defaultValue>
+            </field>
+            <field description="Десятичный адрес (смещение) регистра"
+                name="address" type="I">
+                <defaultValue>0</defaultValue>
+            </field>
+            <field description="Размер" name="size" type="I">
+                <validators>&lt;L=1 255&gt;</validators>
+                <defaultValue>1</defaultValue>
+            </field>
+            <field description="Идентификатор устройства (Unit ID)"
+                name="unitId" type="I">
+                <defaultValue>1</defaultValue>
+            </field>
+        </fields>
+    </format>
+    <records>
+<record>
+	<value name="name">B12_2R</value>
+	<value name="description">"B6_11R Button КВИТИРОВАТЬ"</value>
+	<value name="slot">2</value>
+	<value name="address">2</value>
+</record>
+
+<record>
+	<value name="name">B6_11R</value>
+	<value name="description">"B6_11R Button СБРОС ББ"</value>
+	<value name="slot">1</value>
+	<value name="address">22</value>
+</record>
+<record>
+	<value name="name">B8_11R</value>
+	<value name="description">"B8_11R Button ВПЕРЕД"</value>
+	<value name="slot">1</value>
+	<value name="address">23</value>
+</record>
+<record>
+	<value name="name">B10_11R</value>
+	<value name="description">"B10_11R Button СТОП"</value>
+	<value name="slot">2</value>
+	<value name="address">0</value>
+</record>
+<record>
+	<value name="name">B12_11R</value>
+	<value name="description">"B12_11R Button НАЗАД"</value>
+	<value name="slot">2</value>
+	<value name="address">1</value>
+</record>
+<record>
+	<value name="name">B2_11R</value>
+	<value name="description">"B2_11R СБРОС Проверка схем сброса"</value>
+	<value name="slot">1</value>
+	<value name="address">4</value>
+</record>
+<record>
+	<value name="name">F4_5R</value>
+	<value name="description">"F4_5R Проверка схем сброса"</value>
+	<value name="slot">1</value>
+	<value name="address">5</value>
+	<value name="size">6</value>
+</record>
+<record>
+	<value name="name">F11_5R</value>
+	<value name="description">"F11_5R Время срабатывания ВУ"</value>
+	<value name="slot">1</value>
+	<value name="address">11</value>
+	<value name="size">7</value>
+</record>
+<record>
+	<value name="name">F7_2R</value>
+	<value name="description">"F7_2R ОБДУВ"</value>
+	<value name="slot">1</value>
+	<value name="address">18</value>
+	<value name="size">4</value>
+</record>
+<record>
+	<value name="name">F3_2_1R</value>
+	<value name="description">"F3_2_1R АЗ2 мм х1000"</value>
+	<value name="slot">0</value>
+	<value name="address">0</value>
+	<value name="size">1</value>
+</record>
+<record>
+	<value name="name">F3_2_2R</value>
+	<value name="description">"F3_2_2R АЗ2 мм х100"</value>
+	<value name="slot">0</value>
+	<value name="address">1</value>
+	<value name="size">9</value>
+</record>
+<record>
+	<value name="name">F3_2_3R</value>
+	<value name="description">"F3_2_3R АЗ2 мм х10"</value>
+	<value name="slot">0</value>
+	<value name="address">10</value>
+	<value name="size">9</value>
+</record>
+<record>
+	<value name="name">F3_2_4R</value>
+	<value name="description">"F3_2_4R АЗ2 мм х1"</value>
+	<value name="slot">0</value>
+	<value name="address">19</value>
+	<value name="size">9</value>
+</record>
+</records>
+</table>

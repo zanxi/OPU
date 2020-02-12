@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+    <format maxRecords="2147483647">
+        <fields>
+            <field description="Имя" name="name" type="S">
+              <validators>&lt;L=1 50&gt;&lt;R=\w+^^Имя может содержать только буквы, цифры и символы подчеркивания&gt;</validators>
+                <defaultValue/>
+            </field>
+            <field description="Описание" name="description" type="S">
+              <validators>&lt;L=1 200&gt;&lt;R=[^\p{Cntrl}]*^^Описание может содержать только печатные символы&gt;</validators>
+                <defaultValue/>
+            </field>
+            <field description="Тип" name="type" type="I">
+              <selectionValues>
+                <option description="Дискретный выход (Coil)">0</option>
+                <option description="Дискретный вход (Discrete Input)">1</option>
+                <option description="Входной регистр (Input Register)">2</option>
+                <option description="Выходной регистр (Holding Register)">3</option>
+                        </selectionValues>
+                <defaultValue>0</defaultValue>
+            </field>
+            <field description="Формат" name="format" type="I">
+              <selectionValues>
+                <option description="2-байтный Int Unsigned">2</option>
+                <option description="2-байтный Int Signed">3</option>
+                <option description="4-байтный Int Unsigned">4</option>
+                <option description="4-байтный Int Signed">5</option>
+                <option description="4-байтный Int Unsigned Swapped">6</option>
+                <option description="4-байтный Int Signed Swapped">7</option>
+                <option description="4-байтный Float">8</option>
+                <option description="4-байтный Float Swapped">9</option>
+                <option description="8-байтный Int Signed">11</option>
+                <option description="8-байтный Int Signed Swapped">13</option>
+                <option description="8-байтный Float">14</option>
+                <option description="8-байтный Float Swapped">15</option>
+                <option description="2-байтный BCD">16</option>
+                <option description="4-байтный BCD">17</option>
+                <option description="Символьный">18</option>
+                <option description="Строковый">19</option>
+                </selectionValues>
+                <defaultValue>2</defaultValue>
+            </field>
+            <field description="Десятичный адрес (смещение) регистра"
+                name="address" type="I">
+                <defaultValue>0</defaultValue>
+            </field>
+            <field description="Размер" name="size" type="I">
+                <validators>&lt;L=1 255&gt;</validators>
+                <defaultValue>1</defaultValue>
+            </field>
+            <field description="Идентификатор устройства (Unit ID)"
+                name="unitId" type="I">
+                <defaultValue>1</defaultValue>
+            </field>
+        </fields>
+    </format>
+    <records>
+
+<record>
+	<value name="name">FD1</value>
+	<value name="description">"FD1 CEK"</value>
+	<value name="unitId">1</value>
+	<value name="type">3</value>
+	<value name="format">2</value>
+	<value name="address">0</value>
+	<value name="size">4</value>
+</record>
+<record>
+	<value name="name">FD2</value>
+	<value name="description">"FD2 ПЕРИОД 1К"</value>
+	<value name="unitId">2</value>
+	<value name="type">3</value>
+	<value name="format">2</value>
+	<value name="address">0</value>
+	<value name="size">4</value>
+</record>
+<record>
+	<value name="name">FD3</value>
+	<value name="description">"FD3 ИС1 мм"</value>
+	<value name="unitId">3</value>
+	<value name="type">3</value>
+	<value name="format">2</value>
+	<value name="address">0</value>
+	<value name="size">4</value>
+</record>
+<record>
+	<value name="name">FD4</value>
+	<value name="description">"FD4 ББ1 мм"</value>
+	<value name="unitId">4</value>
+	<value name="type">3</value>
+	<value name="format">2</value>
+	<value name="address">0</value>
+	<value name="size">4</value>
+</record>
+<record>
+	<value name="name">FD5</value>
+	<value name="description">"FD5 ПЕРИОД 2К"</value>
+	<value name="unitId">5</value>
+	<value name="type">3</value>
+	<value name="format">2</value>
+	<value name="address">0</value>
+	<value name="size">4</value>
+</record>
+<record>
+	<value name="name">FD6</value>
+	<value name="description">"FD6 МОЩНОСТЬ 1К"</value>
+	<value name="unitId">6</value>
+	<value name="type">3</value>
+	<value name="format">2</value>
+	<value name="address">0</value>
+	<value name="size">4</value>
+</record>
+<record>
+	<value name="name">FD7</value>
+	<value name="description">"FD7 МОЩНОСТЬ 2К"</value>
+	<value name="unitId">7</value>
+	<value name="type">3</value>
+	<value name="format">2</value>
+	<value name="address">0</value>
+	<value name="size">4</value>
+</record>
+<record>
+	<value name="name">FD8</value>
+	<value name="description">"FD8 ПЕРИОД 3К"</value>
+	<value name="unitId">8</value>
+	<value name="type">3</value>
+	<value name="format">2</value>
+	<value name="address">0</value>
+	<value name="size">4</value>
+</record>
+<record>
+	<value name="name">FD9</value>
+	<value name="description">"FD9 РБ1 мм"</value>
+	<value name="unitId">9</value>
+	<value name="type">3</value>
+	<value name="format">2</value>
+	<value name="address">0</value>
+	<value name="size">4</value>
+</record>
+<record>
+	<value name="name">FD10</value>
+	<value name="description">"FD10 РБ2 мм"</value>
+	<value name="unitId">10</value>
+	<value name="type">3</value>
+	<value name="format">2</value>
+	<value name="address">0</value>
+	<value name="size">4</value>
+</record>
+<record>
+	<value name="name">FD11</value>
+	<value name="description">"FD11 ПЕРИОД 4К"</value>
+	<value name="unitId">11</value>
+	<value name="type">3</value>
+	<value name="format">2</value>
+	<value name="address">0</value>
+	<value name="size">4</value>
+</record>
+<record>
+	<value name="name">FD12</value>
+	<value name="description">"FD12 МОЩНОСТЬ 3К"</value>
+	<value name="unitId">12</value>
+	<value name="type">3</value>
+	<value name="format">2</value>
+	<value name="address">0</value>
+	<value name="size">4</value>
+</record>
+<record>
+	<value name="name">FD13</value>
+	<value name="description">"FD13 МОЩНОСТЬ 4К"</value>
+	<value name="unitId">13</value>
+	<value name="type">3</value>
+	<value name="format">2</value>
+	<value name="address">0</value>
+	<value name="size">4</value>
+</record>
+<record>
+	<value name="name">FD14</value>
+	<value name="description">"FD14 ПЕРИОД РАЗГОНА"</value>
+	<value name="unitId">14</value>
+	<value name="type">3</value>
+	<value name="format">2</value>
+	<value name="address">0</value>
+	<value name="size">4</value>
+</record>
+<record>
+	<value name="name">FD15</value>
+	<value name="description">"FD15 ИС2 мм"</value>
+	<value name="unitId">15</value>
+	<value name="type">3</value>
+	<value name="format">2</value>
+	<value name="address">0</value>
+	<value name="size">4</value>
+</record>
+<record>
+	<value name="name">FD16</value>
+	<value name="description">"FD16 ББ2 мм"</value>
+	<value name="unitId">16</value>
+	<value name="type">3</value>
+	<value name="format">2</value>
+	<value name="address">0</value>
+	<value name="size">4</value>
+</record>
+<record>
+	<value name="name">FD17</value>
+	<value name="description">"FD17 ВРЕМЯ"</value>
+	<value name="unitId">17</value>
+	<value name="type">3</value>
+	<value name="format">2</value>
+	<value name="address">0</value>
+	<value name="size">4</value>
+</record>
+
+</records>
+</table>

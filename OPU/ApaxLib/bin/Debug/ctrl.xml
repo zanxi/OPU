@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+    <format maxRecords="2147483647">
+        <fields>
+            <field description="Имя" name="name" type="S">
+                <validators>&lt;L=1 50&gt;&lt;R=\w+^^Имя может содержать только латинские буквы, цифры и символы подчеркивания&gt;</validators>
+                <defaultValue/>
+            </field>
+            <field description="Описание" name="description" type="S">
+                <validators>&lt;L=1 200&gt;&lt;R=[^\p{Cntrl}]*^^Описание может содержать только печатные символы&gt;</validators>
+                <defaultValue/>
+            </field>
+            <field description="Тип" name="type" type="I">
+                <selectionValues>
+                    <option description="Дискретный выход (Coil)">0</option>
+                    <option description="Дискретный вход (Discrete Input)">1</option>
+                    <option description="Входной регистр (Input Register)">2</option>
+                    <option description="Выходной регистр (Holding Register)">3</option>
+                </selectionValues>
+                <defaultValue>0</defaultValue>
+            </field>
+            <field description="Формат" name="format" type="I">
+                <selectionValues>
+                    <option description="2-байтный Int Unsigned">2</option>
+                    <option description="2-байтный Int Signed">3</option>
+                    <option description="4-байтный Int Unsigned">4</option>
+                    <option description="4-байтный Int Signed">5</option>
+                    <option description="4-байтный Int Unsigned Swapped">6</option>
+                    <option description="4-байтный Int Signed Swapped">7</option>
+                    <option description="4-байтный Float">8</option>
+                    <option description="4-байтный Float Swapped">9</option>
+                    <option description="8-байтный Int Signed">11</option>
+                    <option description="8-байтный IntSignedSwapped">13</option>
+                    <option description="8-байтный Float">14</option>
+                    <option description="8-байтный FloatSwapped">15</option>
+                    <option description="2-байтный Byte Bcd">16</option>
+                    <option description="4-байтный Bcd">17</option>
+                    <option description="Символьный">18</option>
+                    <option description="Строковый">19</option>
+                </selectionValues>
+                <defaultValue>2</defaultValue>
+            </field>
+            <field description="Адрес регистра (десятичный)"
+                name="address" type="I">
+                <defaultValue>0</defaultValue>
+            </field>
+            <field description="Размер" name="size" type="I">
+                <validators>&lt;L=1 255&gt;</validators>
+                <defaultValue>1</defaultValue>
+            </field>
+            <field description="unitId" name="unitId" type="I">
+                <defaultValue>1</defaultValue>
+            </field>
+        </fields>
+    </format>
+    <records>
+        <record>
+            <value name="name">OPULCON</value>
+            <value name="description">ОПУ-1 сигнал наличия связи</value>
+        </record>
+        <record>
+            <value name="name">OPURCON</value>
+            <value name="description">ОПУ-2 сигнал наличия связи</value>
+            <value name="address">1</value>
+        </record>
+        <record>
+            <value name="name">RPUCON</value>
+            <value name="description">РПУ сигнал наличия связи</value>
+            <value name="address">2</value>
+        </record>
+        <record>
+            <value name="name">SRVCON</value>
+            <value name="description">Сервер сигнал наличия связи</value>
+            <value name="address">3</value>
+        </record>
+        <record>
+            <value name="name">OPULREADY</value>
+            <value name="description">ОПУ-1 работоспособен</value>
+            <value name="type">1</value>
+        </record>
+        <record>
+            <value name="name">OPURREADY</value>
+            <value name="description">ОПУ-2 работоспособен</value>
+            <value name="type">1</value>
+            <value name="address">1</value>
+        </record>
+        <record>
+            <value name="name">RPURREADY</value>
+            <value name="description">РПУ работоспособен</value>
+            <value name="type">1</value>
+            <value name="address">2</value>
+        </record>
+        <record>
+            <value name="name">SRVRREADY</value>
+            <value name="description">Сервер работоспособен</value>
+            <value name="type">1</value>
+            <value name="address">3</value>
+        </record>
+        <record>
+            <value name="name">OPULSTATUS</value>
+            <value name="description">ОПУ-1 статус</value>
+            <value name="type">2</value>
+        </record>
+        <record>
+            <value name="name">OPURSTATUS</value>
+            <value name="description">ОПУ-2 статус</value>
+            <value name="type">2</value>
+            <value name="address">1</value>
+        </record>
+        <record>
+            <value name="name">RPUSTATUS</value>
+            <value name="description">РПУ статус</value>
+            <value name="type">2</value>
+            <value name="address">2</value>
+        </record>
+        <record>
+            <value name="name">SRVSTATUS</value>
+            <value name="description">Сервер статус</value>
+            <value name="type">2</value>
+            <value name="address">3</value>
+        </record>
+        <record>
+            <value name="name">OPULLIVE</value>
+            <value name="description">ОПУ-1 счетчик жизни</value>
+            <value name="type">3</value>
+        </record>
+        <record>
+            <value name="name">OPURLIVE</value>
+            <value name="description">ОПУ-2 счетчик жизни</value>
+            <value name="type">3</value>
+            <value name="address">2</value>
+        </record>
+        <record>
+            <value name="name">RPULIVE</value>
+            <value name="description">РПУ счетчик жизни</value>
+            <value name="type">3</value>
+            <value name="address">4</value>
+        </record>
+        <record>
+            <value name="name">SRVLIVE</value>
+            <value name="description">Сервер счетчик жизни</value>
+            <value name="type">3</value>
+            <value name="address">6</value>
+        </record>
+        <record>
+            <value name="name">OPULERROR</value>
+            <value name="description">ОПУ-1 код состояния</value>
+            <value name="type">3</value>
+            <value name="address">1</value>
+        </record>
+        <record>
+            <value name="name">OPURERROR</value>
+            <value name="description">ОПУ-2 код состояния</value>
+            <value name="type">3</value>
+            <value name="address">3</value>
+        </record>
+        <record>
+            <value name="name">RPUERROR</value>
+            <value name="description">РПУ код состояния</value>
+            <value name="type">3</value>
+            <value name="address">5</value>
+        </record>
+        <record>
+            <value name="name">SRVERROR</value>
+            <value name="description">Сервер код состояния</value>
+            <value name="type">3</value>
+            <value name="address">7</value>
+        </record>
+    </records>
+</table>

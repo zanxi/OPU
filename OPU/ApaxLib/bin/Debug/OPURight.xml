@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Apax>
+	<Server name="Apax5580/R" description="OPU2 сервер щита БАРС" 
+	step="100" reconect="60000">
+	</Server>
+	<Devices>
+		<device name="BarsDU" description="БАРС ДУ" step="500"
+				type="RezCanal"
+				ip="192.168.1.171" port="502" 
+				ipdub="192.168.1.171" portdub="502"
+				timeout="300"
+				load="c:/OPU/du.xml"> 
+		</device>
+		<device name="Baz1" description="БАРС БАЗ1" step="500"
+				type="RezCanal"
+				ip="192.168.1.171" port="503" 
+				ipdub="192.168.1.171" portdub="503"
+				timeout="300"
+				load="c:/OPU/baz1.xml"> 
+		</device>
+		<device name="Baz2" description="БАРС БАЗ2" step="500"
+				type="RezCanal"
+				ip="192.168.1.171" port="504" 
+				ipdub="192.168.1.171" portdub="504"
+				timeout="300"
+				load="c:/OPU/baz2.xml"> 
+		</device>
+		<device name="CTRL" description="Контроль Серверов" step="500"
+				type="RezCanal"
+				ip="192.168.1.173" port="502" 
+				ipdub="192.168.1.174" portdub="502"
+				timeout="300"
+				load="c:/OPU/ctrl.xml"> 
+		</device>
+		<device name="Fout" description="ЦИФРОВЫЕ ИНДИКАТОРЫ" step="500"
+				type="ModBusSerialMaster"
+				portname="COM1" encoding="RTU" baudRate="19200" databits="8" stopbits="1" parity="None"
+				timeout="200" 
+				load="c:/OPU/FoutR.xml"> 
+		</device>
+
+		<device name="DO5046" description="APAX 5046 вывод на лампочки " step="200"
+				type="ApaxOutput"
+				timeout="200"
+				load="c:/OPU/LampR.xml"> 
+		</device>
+		<device name="DI5040" description="APAX 5040 ввод кнопок " step="200"
+				type="ApaxInput"
+				timeout="100"
+				load="c:/OPU/ButtonR.xml"> 
+		</device>
+
+	</Devices>
+	<Variables>
+	 		<var name="AZ2MM" description="АЗ2 мм" type="float" value="0" ></var>
+	 		<var name="DS2MM" description="ДС2 мм" type="float" value="0" ></var>
+	 		<var name="POWER1" description="МОШНОСТЬ 1" type="float" value="0" ></var>
+	 		<var name="POWER2" description="МОШНОСТЬ 2" type="float" value="0" ></var>
+	 		<var name="POWER3" description="МОШНОСТЬ 3" type="float" value="0" ></var>
+	 		<var name="POWER4" description="МОШНОСТЬ 4" type="float" value="0" ></var>
+	 		<var name="IS1MM" description="ИС1 мм" type="float" value="0" ></var>
+	 		<var name="IS2MM" description="ИС2 мм" type="float" value="0" ></var>
+	 		<var name="TRAZG" description="Период разгона" type="float" value="0" ></var>
+	 		<var name="REACTIV" description="Реактивность" type="float" value="0" ></var>
+	 		<var name="TAZ1" description="Температура АЗ1" type="float" value="0" ></var>
+	 		<var name="TAZ2" description="Температура АЗ2" type="float" value="0" ></var>
+	 		<var name="AZ2TT" description="Задание АЗ2 мм" type="int" value="0" ></var>
+	 		<var name="AZCODE" description="Обобщенный код первопричины АЗ" type="int" value="0" ></var>
+
+	</Variables>
+  <Constants>
+  		<var name="FALSE" description="FALSE" type="bool" value="false" ></var>
+  		<var name="TRUE" description="TRUE" type="bool" value="true" ></var>
+  		<var name="Con1" description="Один" type="int" value="1" ></var>
+  		<var name="Con2" description="Два" type="int" value="2" ></var>
+  		<var name="Con3" description="Три" type="int" value="3" ></var>
+  		<var name="Con4" description="Четыре" type="int" value="4" ></var>
+  		<var name="Con5" description="Пять" type="int" value="5" ></var>
+  		<var name="Con6" description="Шесть" type="int" value="6" ></var>
+  		<var name="Con7" description="Семь" type="int" value="7" ></var>
+  		<var name="Con8" description="Восемь" type="int" value="8" ></var>
+  		<var name="Con9" description="Девять" type="int" value="9" ></var>
+  		<var name="Con10" description="Десять" type="int" value="10" ></var>
+  		<var name="Con16" description="Шестнадцать" type="int" value="16" ></var>
+  		<var name="Con32" description="Константа 32" type="int" value="32" ></var>
+  		<var name="Con64" description="Константа 64" type="int" value="64" ></var>
+  		<var name="Con128" description="Константа 128" type="int" value="128" ></var>
+  		<var name="Con256" description="Константа 256" type="int" value="256" ></var>
+  		<var name="Con512" description="Константа 512" type="int" value="512" ></var>
+  		<var name="Con1024" description="Константа 1024" type="int" value="1024" ></var>
+  		<var name="Con2048" description="Константа 2048" type="int" value="2048" ></var>
+  		<var name="Con4096" description="Константа 4096" type="int" value="4096" ></var>
+  		<var name="Con8192" description="Константа 8192" type="int" value="8192" ></var>
+  		<var name="Con16384" description="Константа 16384" type="int" value="16384" ></var>
+  		<var name="Con32768" description="Константа 32768" type="int" value="32768" ></var>
+  		<var name="Con65536" description="Константа 65536" type="int" value="65536" ></var>
+  		<var name="Con258" description="Константа 258" type="int" value="258" ></var>
+  		<var name="Con516" description="Константа 516" type="int" value="516" ></var>
+  		<var name="Con100" description="Сто" type="float" value="100" ></var>
+  		<var name="Con1000" description="Тысяча" type="int" value="1000" ></var>
+  </Constants>
+  <Blinds load="c:/OPU/blindR.xml" > </Blinds>
+  <Blinds load="c:/OPU/FDR.xml" > </Blinds>
+  <Blinds load="c:/OPU/appendR.xml" > </Blinds>
+
+  </Apax>

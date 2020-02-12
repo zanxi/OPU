@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+    <format maxRecords="2147483647">
+        <fields>
+            <field description="Имя" name="name" type="S">
+              <validators>&lt;L=1 50&gt;&lt;R=\w+^^Имя может содержать только буквы, цифры и символы подчеркивания&gt;</validators>
+                <defaultValue/>
+            </field>
+            <field description="Описание" name="description" type="S">
+              <validators>&lt;L=1 200&gt;&lt;R=[^\p{Cntrl}]*^^Описание может содержать только печатные символы&gt;</validators>
+                <defaultValue/>
+            </field>
+            <field description="Тип" name="type" type="I">
+              <selectionValues>
+                <option description="Дискретный выход (Coil)">0</option>
+                <option description="Дискретный вход (Discrete Input)">1</option>
+                <option description="Входной регистр (Input Register)">2</option>
+                <option description="Выходной регистр (Holding Register)">3</option>
+                        </selectionValues>
+                <defaultValue>0</defaultValue>
+            </field>
+            <field description="Формат" name="format" type="I">
+              <selectionValues>
+                <option description="2-байтный Int Unsigned">2</option>
+                <option description="2-байтный Int Signed">3</option>
+                <option description="4-байтный Int Unsigned">4</option>
+                <option description="4-байтный Int Signed">5</option>
+                <option description="4-байтный Int Unsigned Swapped">6</option>
+                <option description="4-байтный Int Signed Swapped">7</option>
+                <option description="4-байтный Float">8</option>
+                <option description="4-байтный Float Swapped">9</option>
+                <option description="8-байтный Int Signed">11</option>
+                <option description="8-байтный Int Signed Swapped">13</option>
+                <option description="8-байтный Float">14</option>
+                <option description="8-байтный Float Swapped">15</option>
+                <option description="2-байтный BCD">16</option>
+                <option description="4-байтный BCD">17</option>
+                <option description="Символьный">18</option>
+                <option description="Строковый">19</option>
+                </selectionValues>
+                <defaultValue>2</defaultValue>
+            </field>
+            <field description="Десятичный адрес (смещение) регистра"
+                name="address" type="I">
+                <defaultValue>0</defaultValue>
+            </field>
+            <field description="Размер" name="size" type="I">
+                <validators>&lt;L=1 255&gt;</validators>
+                <defaultValue>1</defaultValue>
+            </field>
+            <field description="Идентификатор устройства (Unit ID)"
+                name="unitId" type="I">
+                <defaultValue>1</defaultValue>
+            </field>
+        </fields>
+    </format>
+    <records>
+
+<record>
+	<value name="name">L3_2R</value>
+	<value name="description">"L3_2R Lamp Готов АЗ1"</value>
+	<value name="slot">0</value>
+	<value name="address">0</value>
+</record>
+<record>
+	<value name="name">L2_3R</value>
+	<value name="description">"L2_3R Lamp Каналы Проверены"</value>
+	<value name="slot">0</value>
+	<value name="address">1</value>
+</record>
+<record>
+	<value name="name">L7_2R</value>
+	<value name="description">"L7_2R Lamp Готов АЗ2"</value>
+	<value name="slot">0</value>
+	<value name="address">6</value>
+</record>
+<record>
+	<value name="name">L4_3R</value>
+	<value name="description">"L4_3R Lamp Давление подано"</value>
+	<value name="slot">0</value>
+	<value name="address">2</value>
+</record>
+<record>
+	<value name="name">L3_4R</value>
+	<value name="description">"L3_4R Lamp Напряжение подано"</value>
+	<value name="slot">0</value>
+	<value name="address">3</value>
+</record>
+<record>
+	<value name="name">L6_3R</value>
+	<value name="description">"L6_3R Lamp Каналы Проверены"</value>
+	<value name="slot">0</value>
+	<value name="address">7</value>
+</record>
+<record>
+	<value name="name">L8_3R</value>
+	<value name="description">"L8_3R Lamp Давление подано"</value>
+	<value name="slot">0</value>
+	<value name="address">8</value>
+</record>
+<record>
+	<value name="name">L7_4R</value>
+	<value name="description">"L7_4R Lamp Напряжение подано"</value>
+	<value name="slot">0</value>
+	<value name="address">9</value>
+</record>
+<record>
+	<value name="name">L2_5R</value>
+	<value name="description">"L2_5R Lamp Магнит ББ1 зацеплен"</value>
+	<value name="slot">0</value>
+	<value name="address">4</value>
+</record>
+<record>
+	<value name="name">L4_5R</value>
+	<value name="description">"L4_5R Lamp Магнит РБ1 зацеплен"</value>
+	<value name="slot">0</value>
+	<value name="address">5</value>
+</record>
+<record>
+	<value name="name">L6_5R</value>
+	<value name="description">"L6_5R Lamp Магнит ББ2 зацеплен"</value>
+	<value name="slot">0</value>
+	<value name="address">10</value>
+</record>
+<record>
+	<value name="name">L8_5R</value>
+	<value name="description">"L8_5R Lamp Магнит РБ2 зацеплен"</value>
+	<value name="slot">0</value>
+	<value name="address">11</value>
+</record>
+<record>
+	<value name="name">L4_8R</value>
+	<value name="description">"L4_8R Lamp АЗ2мм !="</value>
+	<value name="slot">1</value>
+	<value name="address">22</value>
+</record>
+<record>
+	<value name="name">L5_8R</value>
+	<value name="description">"L5_8R Lamp АЗ2мм ("</value>
+	<value name="slot">1</value>
+	<value name="address">23</value>
+</record>
+<record>
+	<value name="name">L12_8R</value>
+	<value name="description">"L12_8R Lamp АЗ2мм )"</value>
+	<value name="slot">2</value>
+	<value name="address">0</value>
+</record>
+<record>
+	<value name="name">L13_8R</value>
+	<value name="description">"L13_8R Lamp АЗ2мм =!"</value>
+	<value name="slot">2</value>
+	<value name="address">1</value>
+</record>
+<record>
+	<value name="name">L4_11R</value>
+	<value name="description">"L4_11R Lamp ДС2мм !="</value>
+	<value name="slot">2</value>
+	<value name="address">2</value>
+</record>
+<record>
+	<value name="name">L5_11R</value>
+	<value name="description">"L5_11R Lamp ДС2мм ("</value>
+	<value name="slot">2</value>
+	<value name="address">3</value>
+</record>
+<record>
+	<value name="name">L12_11R</value>
+	<value name="description">"L12_11R Lamp ДС2мм )"</value>
+	<value name="slot">2</value>
+	<value name="address">4</value>
+</record>
+<record>
+	<value name="name">L13_11R</value>
+	<value name="description">"L13_11R Lamp ДС2мм =!"</value>
+	<value name="slot">2</value>
+	<value name="address">5</value>
+</record>
+<record>
+	<value name="name">L12_2R</value>
+	<value name="description">"L12_2R Lamp Сброс РБ1"</value>
+	<value name="slot">0</value>
+	<value name="address">12</value>
+</record>
+<record>
+	<value name="name">L12_3R</value>
+	<value name="description">"L12_3R Lamp АНИ"</value>
+	<value name="slot">0</value>
+	<value name="address">13</value>
+</record>
+<record>
+	<value name="name">L12_4R</value>
+	<value name="description">"L12_4R Lamp Сброс РБ2"</value>
+	<value name="slot">0</value>
+	<value name="address">14</value>
+</record>
+<record>
+	<value name="name">L12_5R</value>
+	<value name="description">"L12_5R Lamp Движение АЗ2"</value>
+	<value name="slot">0</value>
+	<value name="address">15</value>
+</record>
+<record>
+	<value name="name">L17_2R</value>
+	<value name="description">"L17_2R Lamp Давление ББ1"</value>
+	<value name="slot">0</value>
+	<value name="address">16</value>
+</record>
+<record>
+	<value name="name">L17_3R</value>
+	<value name="description">"L17_3R Lamp Выстрел ИС1"</value>
+	<value name="slot">0</value>
+	<value name="address">17</value>
+</record>
+<record>
+	<value name="name">L17_4R</value>
+	<value name="description">"L17_4R Lamp Давление АЗ1"</value>
+	<value name="slot">0</value>
+	<value name="address">18</value>
+</record>
+<record>
+	<value name="name">L17_5R</value>
+	<value name="description">"L17_5R Lamp Импульс разрешен"</value>
+	<value name="slot">0</value>
+	<value name="address">19</value>
+</record>
+<record>
+	<value name="name">L22_2R</value>
+	<value name="description">"L22_2R Lamp До импульса"</value>
+	<value name="slot">1</value>
+	<value name="address">0</value>
+</record>
+<record>
+	<value name="name">L29_2R</value>
+	<value name="description">"L29_2R Lamp Давление ББ2"</value>
+	<value name="slot">0</value>
+	<value name="address">20</value>
+</record>
+<record>
+	<value name="name">L29_3R</value>
+	<value name="description">"L29_3R Lamp Выстрел ИС2"</value>
+	<value name="slot">0</value>
+	<value name="address">21</value>
+</record>
+<record>
+	<value name="name">L29_4R</value>
+	<value name="description">"L29_4R Lamp Давление АЗ2"</value>
+	<value name="slot">0</value>
+	<value name="address">22</value>
+</record>
+<record>
+	<value name="name">L29_5R</value>
+	<value name="description">"L29_5R Lamp Готовность 2 мин"</value>
+	<value name="slot">0</value>
+	<value name="address">23</value>
+</record>
+<record>
+	<value name="name">L33_2R</value>
+	<value name="description">"L33_2R Lamp АЗ1"</value>
+	<value name="slot">1</value>
+	<value name="address">1</value>
+</record>
+<record>
+	<value name="name">L37_2R</value>
+	<value name="description">"L37_2R АЗ2"</value>
+	<value name="slot">1</value>
+	<value name="address">3</value>
+</record>
+<record>
+	<value name="name">L35_2R</value>
+	<value name="description">"L35_2R Lamp Автомат"</value>
+	<value name="slot">1</value>
+	<value name="address">2</value>
+</record>
+<record>
+	<value name="name">L43_2R</value>
+	<value name="description">"L43_2R Lamp Сброс от"</value>
+	<value name="slot">1</value>
+	<value name="address">9</value>
+</record>
+<record>
+	<value name="name">L40_2R</value>
+	<value name="description">"L40_2R Lamp АЗ1"</value>
+	<value name="slot">1</value>
+	<value name="address">8</value>
+</record>
+<record>
+	<value name="name">L46_2R</value>
+	<value name="description">"L46_2R Lamp АЗ2"</value>
+	<value name="slot">1</value>
+	<value name="address">10</value>
+</record>
+<record>
+	<value name="name">L37_25R</value>
+	<value name="description">"L37_25R Lamp Проверка"</value>
+	<value name="slot">1</value>
+	<value name="address">7</value>
+</record>
+<record>
+	<value name="name">L6_14R</value>
+	<value name="description">"L6_14R Lamp АВТ"</value>
+	<value name="slot">2</value>
+	<value name="address">6</value>
+</record>
+<record>
+	<value name="name">L10_14R</value>
+	<value name="description">"L10_14R Lamp НИ ДС1 ВУ"</value>
+	<value name="slot">2</value>
+	<value name="address">10</value>
+</record>
+<record>
+	<value name="name">L6_15R</value>
+	<value name="description">"L6_15R Lamp АЗ1"</value>
+	<value name="slot">2</value>
+	<value name="address">7</value>
+</record>
+<record>
+	<value name="name">L8_15R</value>
+	<value name="description">"L8_15R Lamp АЗ2"</value>
+	<value name="slot">2</value>
+	<value name="address">9</value>
+</record>
+<record>
+	<value name="name">L10_15R</value>
+	<value name="description">"L10_15R Lamp НИ ДС2 ВУ"</value>
+	<value name="slot">2</value>
+	<value name="address">11</value>
+</record>
+<record>
+	<value name="name">L24_8R</value>
+	<value name="description">"L24_8R Lamp Мощность 1К желтый"</value>
+	<value name="slot">2</value>
+	<value name="address">15</value>
+</record>
+<record>
+	<value name="name">L24_9R</value>
+	<value name="description">"L24_9R Lamp Мощность 1К красный"</value>
+	<value name="slot">2</value>
+	<value name="address">14</value>
+</record>
+<record>
+	<value name="name">L24_11R</value>
+	<value name="description">"L24_11R Lamp Мощность 2К желтый"</value>
+	<value name="slot">2</value>
+	<value name="address">17</value>
+</record>
+<record>
+	<value name="name">L24_12R</value>
+	<value name="description">"L24_12R Lamp Мощность 2К красный"</value>
+	<value name="slot">2</value>
+	<value name="address">16</value>
+</record>
+<record>
+	<value name="name">L24_14R</value>
+	<value name="description">"L24_14R Lamp Мощность 3К желтый"</value>
+	<value name="slot">2</value>
+	<value name="address">19</value>
+</record>
+<record>
+	<value name="name">L24_15R</value>
+	<value name="description">"L24_15R Lamp Мощность 3К красный"</value>
+	<value name="slot">2</value>
+	<value name="address">18</value>
+</record>
+<record>
+	<value name="name">L24_17R</value>
+	<value name="description">"L24_17R Lamp Мощность 4К желтый"</value>
+	<value name="slot">2</value>
+	<value name="address">21</value>
+</record>
+<record>
+	<value name="name">L24_18R</value>
+	<value name="description">"L24_18R Lamp Мощность 4К красный"</value>
+	<value name="slot">2</value>
+	<value name="address">20</value>
+</record>
+<record>
+	<value name="name">L35_14R</value>
+	<value name="description">"L35_14R Lamp Период разгона желтый"</value>
+	<value name="slot">2</value>
+	<value name="address">23</value>
+</record>
+<record>
+	<value name="name">L35_15R</value>
+	<value name="description">"L35_15R Lamp Период разгона красный"</value>
+	<value name="slot">2</value>
+	<value name="address">22</value>
+</record>
+<record>
+	<value name="name">L46_14R</value>
+	<value name="description">"L46_14R Lamp Температура АЗ1 желтый"</value>
+	<value name="slot">4</value>
+	<value name="address">7</value>
+</record>
+<record>
+	<value name="name">L46_15R</value>
+	<value name="description">"L46_15R Lamp Температура АЗ1 красный"</value>
+	<value name="slot">4</value>
+	<value name="address">6</value>
+</record>
+<record>
+	<value name="name">L46_17R</value>
+	<value name="description">"L46_17R Lamp Температура АЗ2 желтый"</value>
+	<value name="slot">4</value>
+	<value name="address">9</value>
+</record>
+<record>
+	<value name="name">L46_18R</value>
+	<value name="description">"L46_18R Lamp Температура АЗ2 красный"</value>
+	<value name="slot">4</value>
+	<value name="address">8</value>
+</record>
+<record>
+	<value name="name">L42_6R</value>
+	<value name="description">"L42_6R Lamp Защита"</value>
+	<value name="slot">3</value>
+	<value name="address">2</value>
+</record>
+<record>
+	<value name="name">L39_6R</value>
+	<value name="description">"L39_6R Lamp Защита Открыта"</value>
+	<value name="slot">3</value>
+	<value name="address">0</value>
+</record>
+<record>
+	<value name="name">L45_6R</value>
+	<value name="description">"L45_6R Lamp Защита закрыта"</value>
+	<value name="slot">3</value>
+	<value name="address">4</value>
+</record>
+<record>
+	<value name="name">L41_6R</value>
+	<value name="description">"L41_6R Lamp ( Защита "</value>
+	<value name="slot">3</value>
+	<value name="address">1</value>
+</record>
+<record>
+	<value name="name">L44_6R</value>
+	<value name="description">"L44_6R Lamp Защита )"</value>
+	<value name="slot">3</value>
+	<value name="address">3</value>
+</record>
+<record>
+	<value name="name">L39_7R</value>
+	<value name="description">"L39_7R Lamp У образцов"</value>
+	<value name="slot">3</value>
+	<value name="address">5</value>
+</record>
+<record>
+	<value name="name">L45_7R</value>
+	<value name="description">"L45_7R Lamp Реактор у защиты"</value>
+	<value name="slot">3</value>
+	<value name="address">9</value>
+</record>
+<record>
+	<value name="name">L41_7R</value>
+	<value name="description">"L41_7R Lamp ( Реактор"</value>
+	<value name="slot">3</value>
+	<value name="address">6</value>
+</record>
+<record>
+	<value name="name">L44_7R</value>
+	<value name="description">"L44_7R Lamp Реактор )"</value>
+	<value name="slot">3</value>
+	<value name="address">8</value>
+</record>
+<record>
+	<value name="name">L42_7R</value>
+	<value name="description">"L42_7R Lamp Реактор"</value>
+	<value name="slot">3</value>
+	<value name="address">7</value>
+</record>
+<record>
+	<value name="name">L39_8R</value>
+	<value name="description">"L39_8R Lamp ВУ1"</value>
+	<value name="slot">3</value>
+	<value name="address">10</value>
+</record>
+<record>
+	<value name="name">L45_8R</value>
+	<value name="description">"L45_8R Lamp НЛ АЗ1 НУ1"</value>
+	<value name="slot">3</value>
+	<value name="address">14</value>
+</record>
+<record>
+	<value name="name">L41_8R</value>
+	<value name="description">"L41_8R Lamp ( НЛ АЗ1"</value>
+	<value name="slot">3</value>
+	<value name="address">11</value>
+</record>
+<record>
+	<value name="name">L44_8R</value>
+	<value name="description">"L44_8R Lamp НЛ АЗ1 )"</value>
+	<value name="slot">3</value>
+	<value name="address">13</value>
+</record>
+<record>
+	<value name="name">L42_8R</value>
+	<value name="description">"L42_8R Lamp НЛ АЗ1"</value>
+	<value name="slot">3</value>
+	<value name="address">12</value>
+</record>
+<record>
+	<value name="name">L39_9R</value>
+	<value name="description">"L39_9R Lamp ВУ2"</value>
+	<value name="slot">3</value>
+	<value name="address">15</value>
+</record>
+<record>
+	<value name="name">L45_9R</value>
+	<value name="description">"L45_9R Lamp НЛ АЗ2 НУ2"</value>
+	<value name="slot">3</value>
+	<value name="address">19</value>
+</record>
+<record>
+	<value name="name">L41_9R</value>
+	<value name="description">"L41_9R Lamp ( НЛ АЗ2"</value>
+	<value name="slot">3</value>
+	<value name="address">16</value>
+</record>
+<record>
+	<value name="name">L44_9R</value>
+	<value name="description">"L44_9R Lamp НЛ АЗ2 )"</value>
+	<value name="slot">3</value>
+	<value name="address">18</value>
+</record>
+<record>
+	<value name="name">L42_9R</value>
+	<value name="description">"L42_9R Lamp НЛ АЗ2"</value>
+	<value name="slot">3</value>
+	<value name="address">17</value>
+</record>
+<record>
+	<value name="name">L39_10R</value>
+	<value name="description">"L39_10R Lamp Закрыты"</value>
+	<value name="slot">3</value>
+	<value name="address">20</value>
+</record>
+<record>
+	<value name="name">L45_10R</value>
+	<value name="description">"L45_10R Lamp Ворота открыты"</value>
+	<value name="slot">4</value>
+	<value name="address">0</value>
+</record>
+<record>
+	<value name="name">L41_10R</value>
+	<value name="description">"L41_10R Lamp ( Ворота"</value>
+	<value name="slot">3</value>
+	<value name="address">21</value>
+</record>
+<record>
+	<value name="name">L44_10R</value>
+	<value name="description">"L44_10R Lamp Ворота )"</value>
+	<value name="slot">3</value>
+	<value name="address">23</value>
+</record>
+<record>
+	<value name="name">L42_10R</value>
+	<value name="description">"L42_10R Lamp Ворота"</value>
+	<value name="slot">3</value>
+	<value name="address">22</value>
+</record>
+<record>
+	<value name="name">L39_11R</value>
+	<value name="description">"L39_11R Lamp Закрыта"</value>
+	<value name="slot">4</value>
+	<value name="address">1</value>
+</record>
+<record>
+	<value name="name">L45_11R</value>
+	<value name="description">"L45_11R Lamp Дверь открыта"</value>
+	<value name="slot">4</value>
+	<value name="address">5</value>
+</record>
+<record>
+	<value name="name">L41_11R</value>
+	<value name="description">"L41_11R Lamp ( Дверь"</value>
+	<value name="slot">4</value>
+	<value name="address">2</value>
+</record>
+<record>
+	<value name="name">L44_11R</value>
+	<value name="description">"L44_11R Lamp Дверь )"</value>
+	<value name="slot">4</value>
+	<value name="address">4</value>
+</record>
+<record>
+	<value name="name">L42_11R</value>
+	<value name="description">"L42_11R Lamp Дверь"</value>
+	<value name="slot">4</value>
+	<value name="address">3</value>
+</record>
+<record>
+	<value name="name">L38_26R</value>
+	<value name="description">"L38_26 Lamp NMax"</value>
+	<value name="slot">1</value>
+	<value name="address">18</value>
+</record>
+<record>
+	<value name="name">L43_29R</value>
+	<value name="description">"L43_29R Lamp НУ ИС1"</value>
+	<value name="slot">1</value>
+	<value name="address">12</value>
+</record>
+<record>
+	<value name="name">L43_23R</value>
+	<value name="description">"L43_23R Lamp tMax АЗ1"</value>
+	<value name="slot">1</value>
+	<value name="address">11</value>
+</record>
+<record>
+	<value name="name">L43_28R</value>
+	<value name="description">"L43_28R Lamp tMax АЗ2"</value>
+	<value name="slot">1</value>
+	<value name="address">14</value>
+</record>
+<record>
+	<value name="name">L43_32R</value>
+	<value name="description">"L43_32R Lamp НУ ИС2"</value>
+	<value name="slot">1</value>
+	<value name="address">15</value>
+</record>
+<record>
+	<value name="name">L38_27R</value>
+	<value name="description">"L38_27R Lamp Тразг"</value>
+	<value name="slot">1</value>
+	<value name="address">17</value>
+</record>
+<record>
+	<value name="name">L43_30R</value>
+	<value name="description">"L43_30R Lamp IУР1"</value>
+	<value name="slot">1</value>
+	<value name="address">19</value>
+</record>
+<record>
+	<value name="name">L43_31R</value>
+	<value name="description">"L43_31R Lamp IУР2"</value>
+	<value name="slot">1</value>
+	<value name="address">20</value>
+</record>
+<record>
+	<value name="name">L43_45R</value>
+	<value name="description">"L43_45R Lamp IIУР"</value>
+	<value name="slot">1</value>
+	<value name="address">21</value>
+</record>
+<record>
+	<value name="name">L8_14R</value>
+	<value name="description">"L8_14R Lamp Проверка"</value>
+	<value name="slot">2</value>
+	<value name="address">8</value>
+</record>
+<record>
+	<value name="name">L10_151R</value>
+	<value name="description">"L10_151R Lamp НУ ИС"</value>
+	<value name="slot">2</value>
+	<value name="address">12</value>
+</record>
+<record>
+	<value name="name">L10_155R</value>
+	<value name="description">"L10_155R Lamp IIУР Рад"</value>
+	<value name="slot">4</value>
+	<value name="address">10</value>
+</record>
+<record>
+	<value name="name">L10_153R</value>
+	<value name="description">"L10_153R Lamp ВУ ИС"</value>
+	<value name="slot">2</value>
+	<value name="address">13</value>
+</record>
+<record>
+	<value name="name">L10_152R</value>
+	<value name="description">"L10_152R Lamp ИНИ"</value>
+	<value name="slot">4</value>
+	<value name="address">11</value>
+</record>
+<record>
+	<value name="name">L10_154R</value>
+	<value name="description">"L10_154R Lamp 1,5с"</value>
+	<value name="slot">4</value>
+	<value name="address">12</value>
+</record>
+<record>
+	<value name="name">L37_21R</value>
+	<value name="description">"L37_21R Lamp СТАТИЧЕСКИЙ+++"</value>
+	<value name="slot">1</value>
+	<value name="address">4</value>
+</record>
+<record>
+	<value name="name">L37_24R</value>
+	<value name="description">"L37_24R Lamp ИМПУЛЬС"</value>
+	<value name="slot">1</value>
+	<value name="address">6</value>
+</record>
+<record>
+	<value name="name">L37_22R</value>
+	<value name="description">"L37_22R Lamp КАЛИБРОКА"</value>
+	<value name="slot">1</value>
+	<value name="address">5</value>
+</record>
+<record>
+	<value name="name">L43_44R</value>
+	<value name="description">"L43_44R Lamp ВУ ИС1"</value>
+	<value name="slot">1</value>
+	<value name="address">13</value>
+</record>
+<record>
+	<value name="name">L43_46R</value>
+	<value name="description">"L43_46R Lamp ВУ ИС2"</value>
+	<value name="slot">1</value>
+	<value name="address">16</value>
+</record>
+<record>
+	<value name="name">L43_21R</value>
+	<value name="description">"L43_46R Lamp Давление АЗ1"</value>
+	<value name="slot">4</value>
+	<value name="address">13</value>
+</record>
+<record>
+	<value name="name">L43_22R</value>
+	<value name="description">"L43_46R Lamp Давление АЗ2"</value>
+	<value name="slot">4</value>
+	<value name="address">14</value>
+</record>
+
+</records>
+</table>

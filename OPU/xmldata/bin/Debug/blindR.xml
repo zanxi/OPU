@@ -1,0 +1,448 @@
+<Blinds>
+<blind name="BLK" start="true" time="0">
+	<param name="BarsDU:R0VS21IDU" type="up"> </param>
+	<param name="Con8" type="up"> </param>
+	<param name="BarsDU:R0AB04LDU" type="up"> </param>
+	<param name="L10_151R" type="out"> </param>
+</blind>
+<blind name="BLK" start="true" time="0">
+	<param name="BarsDU:R0VS21IDU" type="up"> </param>
+	<param name="Con1" type="up"> </param>
+	<param name="BarsDU:R0AB04LDU" type="up"> </param>
+	<param name="L10_152R" type="out"> </param>
+</blind>
+<blind name="BLK" start="true" time="0">
+	<param name="BarsDU:R0VS21IDU" type="up"> </param>
+	<param name="Con2" type="up"> </param>
+	<param name="BarsDU:R0AB04LDU" type="up"> </param>
+	<param name="L10_153R" type="out"> </param>
+</blind>
+<blind name="BLK" start="true" time="0">
+	<param name="BarsDU:R0VS21IDU" type="up"> </param>
+	<param name="Con16" type="up"> </param>
+	<param name="BarsDU:R0AB04LDU" type="up"> </param>
+	<param name="L10_154R" type="out"> </param>
+</blind>
+<blind name="BLK" start="true" time="0">
+	<param name="BarsDU:R0VS21IDU" type="up"> </param>
+	<param name="Con4" type="up"> </param>
+	<param name="BarsDU:R0AB04LDU" type="up"> </param>
+	<param name="L10_155R" type="out"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L3_2R" type="out"> </param>
+<param name="BarsDU:A0VS11LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L2_3R" type="out"> </param>
+<param name="BarsDU:A0VN01LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L7_2R" type="out"> </param>
+<param name="BarsDU:B0VS11LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L4_3R" type="out"> </param>
+<param name="BarsDU:A0VP01LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L3_4R" type="out"> </param>
+<param name="BarsDU:A0VE01LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L6_3R" type="out"> </param>
+<param name="BarsDU:B0VN01LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L8_3R" type="out"> </param>
+<param name="BarsDU:B0VP01LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L7_4R" type="out"> </param>
+<param name="BarsDU:B0VE01LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L2_5R" type="out"> </param>
+<param name="BarsDU:A1IS12LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L4_5R" type="out"> </param>
+<param name="BarsDU:A2IS12LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L6_5R" type="out"> </param>
+<param name="BarsDU:B1IS12LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L8_5R" type="out"> </param>
+<param name="BarsDU:B2IS12LDU" type="up"> </param>
+</blind>
+
+<blind name="NOT" start="true" time="0">
+<param name="L4_8R" type="out"> </param>
+<param name="BarsDU:B8IS22LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L5_8R" type="out"> </param>
+<param name="BarsDU:B8VS22LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L12_8R" type="out"> </param>
+<param name="BarsDU:B8VS12LDU" type="up"> </param>
+</blind>
+<blind name="NOT" start="true" time="0">
+<param name="L13_8R" type="out"> </param>
+<param name="BarsDU:B8IS12LDU" type="up"> </param>
+</blind>
+
+<blind name="NOT" start="true" time="0">
+<param name="L4_11R" type="out"> </param>
+<param name="BarsDU:A8IS22LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L5_11R" type="out"> </param>
+<param name="BarsDU:A8VS22LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L12_11R" type="out"> </param>
+<param name="BarsDU:A8VS12LDU" type="up"> </param>
+</blind>
+<blind name="NOT" start="true" time="0">
+<param name="L13_11R" type="out"> </param>
+<param name="BarsDU:A8IS12LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L12_2R" type="out"> </param>
+<param name="BarsDU:A2VS32LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L12_3R" type="out"> </param>
+<param name="BarsDU:R8IS11LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L12_4R" type="out"> </param>
+<param name="BarsDU:B2VS32LDU" type="up"> </param>
+</blind>
+<blind name="OR" start="true" time="0">
+<param name="L12_5R" type="out"> </param>
+<param name="BarsDU:B8VS12LDU" type="up"> </param>
+<param name="BarsDU:B8VS22LDU" type="up"> </param>
+</blind>
+<blind name="OR" start="true" time="0">
+<param name="L17_2R" type="out"> </param>
+<param name="Baz1:A1VP51LZ1" type="up"> </param>
+<param name="Baz2:A1VP51LZ2" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L17_3R" type="out"> </param>
+<param name="BarsDU:A3VX01LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L17_4R" type="out"> </param>
+<param name="BarsDU:A3VP51LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L17_5R" type="out"> </param>
+<param name="BarsDU:R0VX02LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L22_2R" type="out"> </param>
+<param name="BarsDU:R0VX01LDU" type="up"> </param>
+</blind>
+
+
+<blind name="OR" start="true" time="0">
+<param name="L29_2R" type="out"> </param>
+<param name="Baz1:B1VP51LZ1" type="up"> </param>
+<param name="Baz2:B1VP51LZ2" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L29_3R" type="out"> </param>
+<param name="BarsDU:B3VX01LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L29_4R" type="out"> </param>
+<param name="BarsDU:B3VP51LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L29_5R" type="out"> </param>
+<param name="BarsDU:R0VX03LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L33_2R" type="out"> </param>
+<param name="BarsDU:R0VW13LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L37_2R" type="out"> </param>
+<param name="BarsDU:R0VW23LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L35_2R" type="out"> </param>
+<param name="BarsDU:R0VX09LDU" type="up"> </param>
+</blind>
+<blind name="OR" start="true" time="0">
+<param name="L43_2R" type="out"> </param>
+<param name="Baz1:R0VZ71LZ1" type="up"> </param>
+<param name="Baz2:R0VZ71LZ2" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L40_2R" type="out"> </param>
+<param name="Baz1:R0VZ71LZ1" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L46_2R" type="out"> </param>
+<param name="Baz2:R0VZ71LZ2" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L8_14R" type="out"> </param>
+<param name="BarsDU:R0VS18LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L6_14R" type="out"> </param>
+<param name="BarsDU:R0VS17LDU" type="up"> </param>
+</blind>
+<blind name="NOT" start="true" time="0">
+<param name="L10_14R" type="out"> </param>
+<param name="BarsDU:A9IS11LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L6_15R" type="out"> </param>
+<param name="BarsDU:R0VW13LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L8_15R" type="out"> </param>
+<param name="BarsDU:R0VW23LDU" type="up"> </param>
+</blind>
+<blind name="NOT" start="true" time="0">
+<param name="L10_15R" type="out"> </param>
+<param name="BarsDU:B9IS11LDU" type="up"> </param>
+</blind>
+
+
+<blind name="OR" start="true" time="0">
+<param name="L24_8R" type="out"> </param>
+<param name="Baz1:R0VN61LZ1" type="up"> </param>
+<param name="Baz2:R0VN61LZ2" type="up"> </param>
+</blind>
+<blind name="OR" start="true" time="0">
+<param name="L24_9R" type="out"> </param>
+<param name="Baz1:R0VN71LZ1" type="up"> </param>
+<param name="Baz2:R0VN71LZ2" type="up"> </param>
+</blind>
+
+<blind name="OR" start="true" time="0">
+<param name="L24_11R" type="out"> </param>
+<param name="Baz1:R0VN62LZ1" type="up"> </param>
+<param name="Baz2:R0VN62LZ2" type="up"> </param>
+</blind>
+<blind name="OR" start="true" time="0">
+<param name="L24_12R" type="out"> </param>
+<param name="Baz1:R0VN72LZ1" type="up"> </param>
+<param name="Baz2:R0VN72LZ2" type="up"> </param>
+</blind>
+
+<blind name="OR" start="true" time="0">
+<param name="L24_14R" type="out"> </param>
+<param name="Baz1:R0VN63LZ1" type="up"> </param>
+<param name="Baz2:R0VN63LZ2" type="up"> </param>
+</blind>
+<blind name="OR" start="true" time="0">
+<param name="L24_15R" type="out"> </param>
+<param name="Baz1:R0VN73LZ1" type="up"> </param>
+<param name="Baz2:R0VN73LZ2" type="up"> </param>
+</blind>
+
+<blind name="OR" start="true" time="0">
+<param name="L24_17R" type="out"> </param>
+<param name="Baz1:R0VN64LZ1" type="up"> </param>
+<param name="Baz2:R0VN64LZ2" type="up"> </param>
+</blind>
+<blind name="OR" start="true" time="0">
+<param name="L24_18R" type="out"> </param>
+<param name="Baz1:R0VN74LZ1" type="up"> </param>
+<param name="Baz2:R0VN74LZ2" type="up"> </param>
+</blind>
+
+
+
+<blind name="OR" start="true" time="0">
+<param name="L35_14R" type="out"> </param>
+<param name="Baz1:R0VN69LZ1" type="up"> </param>
+<param name="Baz2:R0VN69LZ2" type="up"> </param>
+</blind>
+<blind name="OR" start="true" time="0">
+<param name="L35_15R" type="out"> </param>
+<param name="Baz1:R0VN79LZ1" type="up"> </param>
+<param name="Baz2:R0VN79LZ2" type="up"> </param>
+</blind>
+
+
+<blind name="OR" start="true" time="0">
+<param name="L46_14R" type="out"> </param>
+<param name="Baz1:A0VT61LZ1" type="up"> </param>
+<param name="Baz2:A0VT61LZ2" type="up"> </param>
+</blind>
+<blind name="OR" start="true" time="0">
+<param name="L46_15R" type="out"> </param>
+<param name="Baz1:A0VT71LZ1" type="up"> </param>
+<param name="Baz2:A0VT71LZ2" type="up"> </param>
+</blind>
+
+<blind name="OR" start="true" time="0">
+<param name="L46_17R" type="out"> </param>
+<param name="Baz1:B0VT61LZ1" type="up"> </param>
+<param name="Baz2:B0VT61LZ2" type="up"> </param>
+</blind>
+<blind name="OR" start="true" time="0">
+<param name="L46_18R" type="out"> </param>
+<param name="Baz1:B0VT71LZ1" type="up"> </param>
+<param name="Baz2:B0VT71LZ2" type="up"> </param>
+</blind>
+<blind name="BLINK" start="true" time="0">
+<param name="L42_6R" type="out"> </param>
+<param name="BarsDU:A6VS00IDU" type="up"> </param>
+<param name="BarsDU:A6VS00IDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L39_6R" type="out"> </param>
+<param name="BarsDU:A6VS14LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L45_6R" type="out"> </param>
+<param name="BarsDU:A6VS24LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L41_6R" type="out"> </param>
+<param name="BarsDU:A6VS12LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L44_6R" type="out"> </param>
+<param name="BarsDU:A6VS22LDU" type="up"> </param>
+</blind>
+<blind name="NOT" start="true" time="0">
+<param name="L39_7R" type="out"> </param>
+<param name="BarsDU:R4IS12LDU" type="up"> </param>
+</blind>
+<blind name="NOT" start="true" time="0">
+<param name="L45_7R" type="out"> </param>
+<param name="BarsDU:R4IS22LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L41_7R" type="out"> </param>
+<param name="BarsDU:R4VS12LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L44_7R" type="out"> </param>
+<param name="BarsDU:R4VS22LDU" type="up"> </param>
+</blind>
+<blind name="BLINK" start="true" time="0">
+<param name="L42_7R" type="out"> </param>
+<param name="BarsDU:R4VS00IDU" type="up"> </param>
+<param name="BarsDU:R4VS00IDU" type="up"> </param>
+</blind>
+<blind name="NOT" start="true" time="0">
+<param name="L39_8R" type="out"> </param>
+<param name="BarsDU:A5IS11LDU" type="up"> </param>
+</blind>
+<blind name="NOT" start="true" time="0">
+<param name="L45_8R" type="out"> </param>
+<param name="BarsDU:A5IS21LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L41_8R" type="out"> </param>
+<param name="BarsDU:A5VS12LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L44_8R" type="out"> </param>
+<param name="BarsDU:A5VS22LDU" type="up"> </param>
+</blind>
+<blind name="BLINK" start="true" time="0">
+<param name="L42_8R" type="out"> </param>
+<param name="BarsDU:A5VS00IDU" type="up"> </param>
+<param name="BarsDU:A5VS00IDU" type="up"> </param>
+</blind>
+<blind name="NOT" start="true" time="0">
+<param name="L39_9R" type="out"> </param>
+<param name="BarsDU:B5IS11LDU" type="up"> </param>
+</blind>
+<blind name="NOT" start="true" time="0">
+<param name="L45_9R" type="out"> </param>
+<param name="BarsDU:B5IS21LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L41_9R" type="out"> </param>
+<param name="BarsDU:B5VS12LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L44_9R" type="out"> </param>
+<param name="BarsDU:B5VS22LDU" type="up"> </param>
+</blind>
+<blind name="BLINK" start="true" time="0">
+<param name="L42_9R" type="out"> </param>
+<param name="BarsDU:B5VS00IDU" type="up"> </param>
+<param name="BarsDU:B5VS00IDU" type="up"> </param>
+</blind>
+<blind name="NOT" start="true" time="0">
+<param name="L39_10R" type="out"> </param>
+<param name="BarsDU:R5IS21LDU" type="up"> </param>
+</blind>
+<blind name="NOT" start="true" time="0">
+<param name="L45_10R" type="out"> </param>
+<param name="BarsDU:R5IS11LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L41_10R" type="out"> </param>
+<param name="BarsDU:R5VS12LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L44_10R" type="out"> </param>
+<param name="BarsDU:R5VS22LDU" type="up"> </param>
+</blind>
+<blind name="BLINK" start="true" time="0">
+<param name="L42_10R" type="out"> </param>
+<param name="BarsDU:R5VS00IDU" type="up"> </param>
+<param name="BarsDU:R5VS00IDU" type="up"> </param>
+</blind>
+<blind name="NOT" start="true" time="0">
+<param name="L39_11R" type="out"> </param>
+<param name="BarsDU:R3IS21LDU" type="up"> </param>
+</blind>
+<blind name="NOT" start="true" time="0">
+<param name="L45_11R" type="out"> </param>
+<param name="BarsDU:R3IS11LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L41_11R" type="out"> </param>
+<param name="BarsDU:R3VS12LDU" type="up"> </param>
+</blind>
+<blind name="SET" start="true" time="0">
+<param name="L44_11R" type="out"> </param>
+<param name="BarsDU:R3VS22LDU" type="up"> </param>
+</blind>
+<blind name="BLINK" start="true" time="0">
+	<param name="L42_11R" type="out"> </param>
+	<param name="BarsDU:R3VS00IDU" type="up"> </param>
+	<param name="BarsDU:R3VS00IDU" type="up"> </param>
+</blind>
+<blind name="EQ" start="true" time="0">
+	<param name="L37_21R" type="out"> </param>
+	<param name="BarsDU:R0MW12IP1" type="up"> </param>
+	<param name="Con2" type="up"> </param>
+</blind>
+<blind name="EQ" start="true" time="0">
+	<param name="L37_24R" type="out"> </param>
+	<param name="BarsDU:R0MW12IP1" type="up"> </param>
+	<param name="Con1" type="up"> </param>
+</blind>
+<blind name="EQ" start="true" time="0">
+	<param name="L37_25R" type="out"> </param>
+	<param name="BarsDU:R0MW12IP1" type="up"> </param>
+	<param name="Con4" type="up"> </param>
+</blind>
+<blind name="EQ" start="true" time="0">
+	<param name="L37_22R" type="out"> </param>
+	<param name="BarsDU:R0MW12IP1" type="up"> </param>
+	<param name="Con3" type="up"> </param>
+</blind>
+
+</Blinds>

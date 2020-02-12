@@ -1,0 +1,163 @@
+<Blinds>
+<blind name="DATATIME" start="true" time="0">
+	<param name="FALSE" type="up"> </param>
+	<param name="FD33" type="out"> </param>
+</blind>
+<blind name="IntStr" start="true" time="0">
+	<param name="BarsDU:R0VL01IDU" type="up"> </param>
+	<param name="Con2" type="up"> </param>
+	<param name="FALSE" type="up"> </param>
+	<param name="FD18" type="out"> </param>
+</blind>
+<blind name="IntStr" start="true" time="0">
+	<param name="BarsDU:R0VL11IDU" type="up"> </param>
+	<param name="Con2" type="up"> </param>
+	<param name="FALSE" type="up"> </param>
+	<param name="FD19" type="out"> </param>
+</blind>
+<blind name="DIV" start="true" time="0">
+	<param name="AZ2MM" type="out"> </param>
+	<param name="BarsDU:B8VC01UDU" type="up"> </param>
+	<param name="Con100" type="up"> </param>
+</blind>
+<blind name="DIV" start="true" time="0">
+	<param name="DS2MM" type="out"> </param>
+	<param name="BarsDU:A8VC01UDU" type="up"> </param>
+	<param name="Con100" type="up"> </param>
+</blind>
+<blind name="FloatStr" start="true" time="0">
+	<param name="AZ2MM" type="up"> </param>
+	<param name="FALSE" type="up"> </param>
+	<param name="FD20" type="out"> </param>
+</blind>
+<blind name="FloatStr" start="true" time="0">
+	<param name="DS2MM" type="up"> </param>
+	<param name="FALSE" type="up"> </param>
+	<param name="FD21" type="out"> </param>
+</blind>
+<blind name="FloatStr" start="true" time="0">
+	<param name="BarsDU:R0VL01RDU" type="up"> </param>
+	<param name="FALSE" type="up"> </param>
+	<param name="FD22" type="out"> </param>
+</blind>
+<blind name="FORIF" start="true" time="0">
+	<param name="POWER1" type="out"> </param>
+	<param name="Baz1:R0VN61LZ1" type="up"> </param>
+	<param name="Baz2:R0VN01RZ2" type="up"> </param>
+	<param name="Baz1:R0VN01RZ1" type="up"> </param>
+	<param name="Baz2:R0VN61LZ2" type="up"> </param>
+	<param name="Baz1:R0VN01RZ1" type="up"> </param>
+	<param name="Baz2:R0VN01RZ2" type="up"> </param>
+</blind>
+<blind name="FloatStr" start="true" time="0">
+	<param name="POWER1" type="up"> </param>
+	<param name="FALSE" type="up"> </param>
+	<param name="FD23" type="out"> </param>
+</blind>
+<blind name="FORIF" start="true" time="0">
+	<param name="POWER2" type="out"> </param>
+	<param name="Baz1:R0VN62LZ1" type="up"> </param>
+	<param name="Baz2:R0VN02RZ2" type="up"> </param>
+	<param name="Baz1:R0VN02RZ1" type="up"> </param>
+	<param name="Baz2:R0VN62LZ2" type="up"> </param>
+	<param name="Baz1:R0VN02RZ1" type="up"> </param>
+	<param name="Baz2:R0VN02RZ2" type="up"> </param>
+</blind>
+<blind name="FloatStr" start="true" time="0">
+	<param name="POWER2" type="up"> </param>
+	<param name="FALSE" type="up"> </param>
+	<param name="FD24" type="out"> </param>
+</blind>
+<blind name="FORIF" start="true" time="0">
+	<param name="POWER3" type="out"> </param>
+	<param name="Baz1:R0VN63LZ1" type="up"> </param>
+	<param name="Baz2:R0VN03RZ2" type="up"> </param>
+	<param name="Baz1:R0VN03RZ1" type="up"> </param>
+	<param name="Baz2:R0VN63LZ2" type="up"> </param>
+	<param name="Baz1:R0VN03RZ1" type="up"> </param>
+	<param name="Baz2:R0VN03RZ2" type="up"> </param>
+</blind>
+<blind name="FloatStr" start="true" time="0">
+	<param name="POWER3" type="up"> </param>
+	<param name="FALSE" type="up"> </param>
+	<param name="FD25" type="out"> </param>
+</blind>
+<blind name="FORIF" start="true" time="0">
+	<param name="POWER4" type="out"> </param>
+	<param name="Baz1:R0VN64LZ1" type="up"> </param>
+	<param name="Baz2:R0VN04RZ2" type="up"> </param>
+	<param name="Baz1:R0VN04RZ1" type="up"> </param>
+	<param name="Baz2:R0VN64LZ2" type="up"> </param>
+	<param name="Baz1:R0VN04RZ1" type="up"> </param>
+	<param name="Baz2:R0VN04RZ2" type="up"> </param>
+</blind>
+<blind name="FloatStr" start="true" time="0">
+	<param name="POWER4" type="up"> </param>
+	<param name="FALSE" type="up"> </param>
+	<param name="FD26" type="out"> </param>
+</blind>
+<blind name="DIV" start="true" time="0">
+	<param name="IS1MM" type="out"> </param>
+	<param name="BarsDU:A3VC01UDU" type="up"> </param>
+	<param name="Con100" type="up"> </param>
+</blind>
+<blind name="DIV" start="true" time="0">
+	<param name="IS2MM" type="out"> </param>
+	<param name="BarsDU:B3VC01UDU" type="up"> </param>
+	<param name="Con100" type="up"> </param>
+</blind>
+<blind name="FloatStr" start="true" time="0">
+	<param name="IS1MM" type="up"> </param>
+	<param name="FALSE" type="up"> </param>
+	<param name="FD27" type="out"> </param>
+</blind>
+<blind name="FloatStr" start="true" time="0">
+	<param name="IS2MM" type="up"> </param>
+	<param name="FALSE" type="up"> </param>
+	<param name="FD28" type="out"> </param>
+</blind>
+<blind name="FORIF" start="true" time="0">
+	<param name="TRAZG" type="out"> </param>
+	<param name="Baz1:R0VN69LZ1" type="up"> </param>
+	<param name="Baz2:R0VN09RZ2" type="up"> </param>
+	<param name="Baz1:R0VN09RZ1" type="up"> </param>
+	<param name="Baz2:R0VN69LZ2" type="up"> </param>
+	<param name="Baz1:R0VN09RZ1" type="up"> </param>
+	<param name="Baz2:R0VN09RZ2" type="up"> </param>
+</blind>
+<blind name="FloatStr" start="true" time="0">
+	<param name="TRAZG" type="up"> </param>
+	<param name="FALSE" type="up"> </param>
+	<param name="FD29" type="out"> </param>
+</blind>
+<blind name="FORMAX" start="true" time="0">
+	<param name="REACTIV" type="out"> </param>
+	<param name="Baz1:R0VR02RZ1" type="up"> </param>
+	<param name="Baz2:R0VR02RZ2" type="up"> </param>
+</blind>
+<blind name="FloatStr" start="true" time="0">
+	<param name="REACTIV" type="up"> </param>
+	<param name="FALSE" type="up"> </param>
+	<param name="FD30" type="out"> </param>
+</blind>
+<blind name="FORMAX" start="true" time="0">
+	<param name="TAZ1" type="out"> </param>
+	<param name="Baz1:A0CT01IZ1" type="up"> </param>
+	<param name="Baz2:A0CT01IZ2" type="up"> </param>
+</blind>
+<blind name="FloatStr" start="true" time="0">
+	<param name="TAZ1" type="up"> </param>
+	<param name="FALSE" type="up"> </param>
+	<param name="FD31" type="out"> </param>
+</blind>
+<blind name="FORMAX" start="true" time="0">
+	<param name="TAZ2" type="out"> </param>
+	<param name="Baz1:B0CT01IZ1" type="up"> </param>
+	<param name="Baz2:B0CT01IZ2" type="up"> </param>
+</blind>
+<blind name="FloatStr" start="true" time="0">
+	<param name="TAZ2" type="up"> </param>
+	<param name="FALSE" type="up"> </param>
+	<param name="FD32" type="out"> </param>
+</blind>
+</Blinds>

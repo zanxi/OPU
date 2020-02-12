@@ -1,0 +1,15 @@
+C:\D\MD\C#\ApaxLib\test\bin\Debug\test.exe.config
+C:\D\MD\C#\ApaxLib\test\bin\Debug\test.exe
+C:\D\MD\C#\ApaxLib\test\bin\Debug\test.pdb
+C:\D\MD\C#\ApaxLib\test\bin\Debug\test.exe.CodeAnalysisLog.xml
+C:\D\MD\C#\ApaxLib\test\bin\Debug\test.exe.lastcodeanalysissucceeded
+C:\D\MD\C#\ApaxLib\test\bin\Debug\ApaxLib.dll
+C:\D\MD\C#\ApaxLib\test\bin\Debug\NModbus4.dll
+C:\D\MD\C#\ApaxLib\test\bin\Debug\ApaxLib.pdb
+C:\D\MD\C#\ApaxLib\test\bin\Debug\NModbus4.xml
+C:\D\MD\C#\ApaxLib\test\obj\Debug\test.csprojResolveAssemblyReference.cache
+C:\D\MD\C#\ApaxLib\test\obj\Debug\test.exe
+C:\D\MD\C#\ApaxLib\test\obj\Debug\test.pdb
+c:\Users\PPU1\OneDrive\____________\_MyApax__\ApaxLib\test\bin\Debug\test.exe.config
+c:\Users\PPU1\OneDrive\____________\_MyApax__\ApaxLib\test\obj\Debug\test.exe
+c:\Users\PPU1\OneDrive\____________\_MyApax__\ApaxLib\test\obj\Debug\test.pdb
